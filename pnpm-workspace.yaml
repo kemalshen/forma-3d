@@ -1,0 +1,7 @@
+strictDepBuilds: true
+allowBuilds:
+  esbuild: set this to true or false
+  fsevents: set this to true or false
+  sharp: true
+  unrs-resolver: set this to true or false
+  workerd: set this to true or false

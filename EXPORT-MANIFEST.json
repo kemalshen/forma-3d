@@ -1,0 +1,651 @@
+{
+  "sourceCommit": "60fa4319a11ffe6dd73b9a7f3dac8bb18dd6447f",
+  "created": "2026-10-14",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 64,
+      "sha256": "c0473260b8e4677c48afe286694170ab8846b4d35f8903d6fbb88fb2d91dc555"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 185,
+      "sha256": "60084df73eb0591545e7e0315af044415282f70599cd4a7310033ac08a25b41e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 127,
+      "sha256": "b33746e9e876824a3fae205d483d5e7fff7c9b2ec96df69f5713852daaebba2b"
+    },
+    {
+      "path": "ASSET-SOURCES.md",
+      "bytes": 5239,
+      "sha256": "cdb6704ab7fa5d22416d72fa467e829314f6fb9fdeb4a374256618184a4612ec"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 694,
+      "sha256": "70d18d77f81315af74de72baff7ee76b84d64fd518c34c4eef1e999b975daaf9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7362,
+      "sha256": "4f2266f373009d3558f9566d3af70488358e0f07e39203357bf51f26d69ad19b"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 2503,
+      "sha256": "5a24720f89ad21d37c010d55507cd918d6abea0020b9882544159dd1bcd82b9a"
+    },
+    {
+      "path": "components.json",
+      "bytes": 420,
+      "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+    },
+    {
+      "path": "next-env.d.ts",
+      "bytes": 288,
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 155,
+      "sha256": "565a60f2990dd8b0ef1bc9b90e2cae5e1adff7f08376e0038d5e7f6ecd896f44"
+    },
+    {
+      "path": "package.json",
+      "bytes": 873,
+      "sha256": "3063f0d634f33ac31998ef7a6a73f84de9db5da78e9e1d084fbbf4030eaf0c23"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 133653,
+      "sha256": "2e71fbc93f50634f4f0b02f234031469b383f9898eea76af055dba5d0360d22e"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 204,
+      "sha256": "450d5404ab7799073cc024e65784bdea3161be202822aa350d2ca0883310c67c"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "bytes": 94,
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 733,
+      "sha256": "46146d4caf8cf8b6012a257f90a42f279f0b084ff7a58374bf5ca75191269b29"
+    },
+    {
+      "path": "app/catalog.ts",
+      "bytes": 7989,
+      "sha256": "8ba781f085ea7717206c34051b957b1d7e056a2ccf2c6629ae9b55e95520db77"
+    },
+    {
+      "path": "app/globals.css",
+      "bytes": 62412,
+      "sha256": "8e07cbb18de6b2beff96a61143329072971b79d9321ced3c5d99a87819c1e49b"
+    },
+    {
+      "path": "app/layout.tsx",
+      "bytes": 611,
+      "sha256": "204deeb9dbdd45a798260c8457dbc4853ff8b5a557f8146d9a7b8a7eb443efc1"
+    },
+    {
+      "path": "app/page.tsx",
+      "bytes": 101,
+      "sha256": "0135a7a206e20ec5471a77592bf1b0cac5c44d0d2e85aada4d9aabcbd08065d0"
+    },
+    {
+      "path": "app/parts.ts",
+      "bytes": 10155,
+      "sha256": "aba4569970fb57f9ad3c65c321b0a2a04dcdad9c690fe4822090e1780cca73f3"
+    },
+    {
+      "path": "app/store.tsx",
+      "bytes": 80562,
+      "sha256": "860c393d5ba9b7cd31b8a897a71243fa17dc443912bf3817084c0bf8f9de38c5"
+    },
+    {
+      "path": "app/[lang]/[[...path]]/page.tsx",
+      "bytes": 231,
+      "sha256": "4afaf528b1fd56c7c8adb0c62b84565bbf9f0341692495086158cf6df052098c"
+    },
+    {
+      "path": "app/api/health/route.ts",
+      "bytes": 89,
+      "sha256": "73f769a88e764904eb9251db40238ddd1645980f2f9d6b1a7929899c8bd48ff1"
+    },
+    {
+      "path": "app/data/filament-photos.json",
+      "bytes": 12607,
+      "sha256": "493b5040097e3ff2a659ed5549c84eeb721dd14c447faa679672c35dd389afb9"
+    },
+    {
+      "path": "app/data/filament-source.json",
+      "bytes": 9752,
+      "sha256": "02d75583e292613b548751aecc16b439c4708ecf986c4a09891ca6765349ba3b"
+    },
+    {
+      "path": "app/data/parts-photos.json",
+      "bytes": 13980,
+      "sha256": "2784da9ecdecf4bf37bb3dc00ee0cd318b7522146e5609a6142443543d844956"
+    },
+    {
+      "path": "app/data/parts-source.json",
+      "bytes": 10086,
+      "sha256": "61b44b5989e07ee14e7a5b96adfe2c22eeae29f2148423288053dd730a08af30"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "bytes": 2392,
+      "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+    },
+    {
+      "path": "components/ui/checkbox.tsx",
+      "bytes": 1214,
+      "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "bytes": 4303,
+      "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+    },
+    {
+      "path": "components/ui/pagination.tsx",
+      "bytes": 2717,
+      "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+    },
+    {
+      "path": "components/ui/radio-group.tsx",
+      "bytes": 1460,
+      "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+    },
+    {
+      "path": "components/ui/select.tsx",
+      "bytes": 6353,
+      "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+    },
+    {
+      "path": "components/ui/sheet.tsx",
+      "bytes": 4188,
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+    },
+    {
+      "path": "components/ui/slider.tsx",
+      "bytes": 1991,
+      "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+    },
+    {
+      "path": "components/ui/table.tsx",
+      "bytes": 2478,
+      "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+    },
+    {
+      "path": "components/ui/tabs.tsx",
+      "bytes": 3782,
+      "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+    },
+    {
+      "path": "lib/utils.ts",
+      "bytes": 177,
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 195,
+      "sha256": "2b14b69abead8513a391b7340aaa05e774bac402f699ae25fc3d83a0f6eb5455"
+    },
+    {
+      "path": "public/images/black.webp",
+      "bytes": 282194,
+      "sha256": "1c6e44ebc8d809618037a276d313541ac57b15d4c3f82d4fcbe0e2aa7eb7f97e"
+    },
+    {
+      "path": "public/images/blue.webp",
+      "bytes": 187606,
+      "sha256": "db4305adeefbb4985eb9a9a087feb54236e4310f96acb101a5d63ecf89eae3ca"
+    },
+    {
+      "path": "public/images/green-sample.webp",
+      "bytes": 224676,
+      "sha256": "cc33973aea58b1e36298d9d3764fb2008b22e6bcac311bfd91188245bdc45828"
+    },
+    {
+      "path": "public/images/green.webp",
+      "bytes": 94990,
+      "sha256": "dd97126041db8258796b8c560dd77583d57b1a859afefc005f4326d9a934328d"
+    },
+    {
+      "path": "public/images/hotend.webp",
+      "bytes": 297620,
+      "sha256": "4f36ebbb1b5aeb1ce88bd7d3ddffd8d86233c27052f8824ab622b5260b03ebde"
+    },
+    {
+      "path": "public/images/orange.webp",
+      "bytes": 386824,
+      "sha256": "556b3a8468cea5295a6bbbaaae006793d1ccef743c34b88ff5aab6a3921db6fc"
+    },
+    {
+      "path": "public/images/petg-white.webp",
+      "bytes": 149238,
+      "sha256": "acf22ce1e0d4ac15b647455da617ae765455b8c3eba6eddc12e166f718bd5767"
+    },
+    {
+      "path": "public/images/plate.webp",
+      "bytes": 355498,
+      "sha256": "21c3eadaf22dfed4180b0732a2a84201531b181956eff00f938a3d2bfee87812"
+    },
+    {
+      "path": "public/images/white.webp",
+      "bytes": 204708,
+      "sha256": "0fd185d26b6fe117308287045fe41a550ac0ba079bf71ff15c26741b815091b1"
+    },
+    {
+      "path": "public/images/clients/baxt-textile.png",
+      "bytes": 77836,
+      "sha256": "06a8bd3a65706e81187e319fa24d3a97159718117af28271ccb78ee4caf37745"
+    },
+    {
+      "path": "public/images/clients/narbahor-textile.png",
+      "bytes": 17077,
+      "sha256": "77096feb5a118bbc4df1da76193a4f63cabfc1f6351361677a34236266f0c0dd"
+    },
+    {
+      "path": "public/images/clients/ngmk.png",
+      "bytes": 893993,
+      "sha256": "6910e1376d218f0ee5269727bd45dbeafb25955fb38b64957900e580c5eabf6f"
+    },
+    {
+      "path": "public/images/clients/nzbt.png",
+      "bytes": 528897,
+      "sha256": "32f89fb8c33fffb6b32522af1e9458951e168f351d922988c455f98f8e6bc435"
+    },
+    {
+      "path": "public/images/filaments/abs-black.png",
+      "bytes": 185138,
+      "sha256": "6c7de09421f7e2bd25b19507f7d3f9331ff73955a4a4b1d973275a7a1d3814b2"
+    },
+    {
+      "path": "public/images/filaments/abs-white.png",
+      "bytes": 166013,
+      "sha256": "9d72b09a906588554aad458765a43b1bb62d589d345c3a0ac2b2783de71006b5"
+    },
+    {
+      "path": "public/images/filaments/asa-black.png",
+      "bytes": 123005,
+      "sha256": "ab3f41d700841d6903ecb18f7474f751ccb215a4da23853b0c85c22c01177f71"
+    },
+    {
+      "path": "public/images/filaments/asa-white.png",
+      "bytes": 163019,
+      "sha256": "2583ff7a7d2ff7b27a384b0c2e9df9fded0f52058742d84da0460ae5854d65a2"
+    },
+    {
+      "path": "public/images/filaments/pa6-cf-request.png",
+      "bytes": 199427,
+      "sha256": "773e93c42ef84f966bdb3f8e6a98daaddcf14796ec6db61bd62be3a8a6faaf7b"
+    },
+    {
+      "path": "public/images/filaments/paht-cf-request.png",
+      "bytes": 266126,
+      "sha256": "c8cf88c44284c14b8563836df18f59d4f97557e57c682df84293bc676639851a"
+    },
+    {
+      "path": "public/images/filaments/pc-request.png",
+      "bytes": 90788,
+      "sha256": "91a2fdf8c01b61134339bca22be09046e6699573dfcd64828d78106a01d14e59"
+    },
+    {
+      "path": "public/images/filaments/pet-cf-request.png",
+      "bytes": 225203,
+      "sha256": "19025dff22507eb943f76607136e3c315e10c3bd3507dc3636c797b0b47f0f7f"
+    },
+    {
+      "path": "public/images/filaments/petg-cf-request.png",
+      "bytes": 279027,
+      "sha256": "9fe7b8e055104c61095bcb3d2df131c4a0408ffc2389e496c4f0545be32d7334"
+    },
+    {
+      "path": "public/images/filaments/petg-hf-black.jpg",
+      "bytes": 17975,
+      "sha256": "dff22d204aaa91495a4251e1630ec91d935cbd579dbce194dacc07ec27cfe179"
+    },
+    {
+      "path": "public/images/filaments/petg-hf-gray.jpg",
+      "bytes": 18047,
+      "sha256": "97909e73f0c72f615c26a25b7ae8f0aecdf6402a5580483e7c7e49ea7558667c"
+    },
+    {
+      "path": "public/images/filaments/petg-hf-white.jpg",
+      "bytes": 12939,
+      "sha256": "78ff19e40dcc83960065069c09c9ac740c946e30a6f40716aba6511d0e9e0a05"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-beige.jpg",
+      "bytes": 16965,
+      "sha256": "8923db1e8533007af0726122ec9e6259a21897a2fbf35f88e59528dc8d312861"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-black.png",
+      "bytes": 185152,
+      "sha256": "c344dbcaf7ad9ce39c9ffc9a2520f8fd87b00acc0ecb91e2da5b0f28e5e369c5"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-blue.jpg",
+      "bytes": 22470,
+      "sha256": "3f6781aa0c65acbdaa3aa1d6e484550778c8c02e9f4a53d558a28f61ba7474bd"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-gray.png",
+      "bytes": 206618,
+      "sha256": "c44f9493058df5dd5bc9fab5a8e7c5ed956abae441fa4939ff7e2545b0f56092"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-green.jpg",
+      "bytes": 24799,
+      "sha256": "029b85694d2899ae0d555b93342c30ead45ec1295fcb7c3fb53afa24c78f0fc8"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-orange.jpg",
+      "bytes": 24562,
+      "sha256": "574d2e7a736e58374ef343b5fcd2370fc75d8273128e45b9d3936e5748534a0d"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-red.jpg",
+      "bytes": 26087,
+      "sha256": "c62610e323bd2bee889618d323671c9062e6a465a0d23416694ea52ecb846c78"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-white.jpg",
+      "bytes": 13289,
+      "sha256": "8cc71ef4a799df05520a3610860064b8da398bd095673aa329da74aaa3c9a794"
+    },
+    {
+      "path": "public/images/filaments/pla-basic-yellow.jpg",
+      "bytes": 23277,
+      "sha256": "0d47304150ff727f4930b94afd589e0b78ab5a794360f5b83b40e10eb3086b40"
+    },
+    {
+      "path": "public/images/filaments/pla-cf-black.jpg",
+      "bytes": 22026,
+      "sha256": "5a54a2682151c194d3b663845fcf18b56e8eab33e864b5431e6a11814512c6de"
+    },
+    {
+      "path": "public/images/filaments/pla-galaxy-request.jpg",
+      "bytes": 38725,
+      "sha256": "1bf691007648a9fe3242ea70df6b4c6fb92c5c2bdb667fa2bf3459b9e2abf385"
+    },
+    {
+      "path": "public/images/filaments/pla-glow-request.png",
+      "bytes": 215508,
+      "sha256": "69b8d98110618d696c44427f6a2d69d8de3f879f4eed3b9ea4acdff9453facf0"
+    },
+    {
+      "path": "public/images/filaments/pla-marble-request.jpg",
+      "bytes": 37646,
+      "sha256": "41e96bb274b928d77aac7a6caf9971b3a40fa5122806039f8051bbd0c4537dd1"
+    },
+    {
+      "path": "public/images/filaments/pla-matte-beige.png",
+      "bytes": 177032,
+      "sha256": "d4c4d2354093f30df92578bfbe17dd300fe1221a106a4b312783761aca3045c6"
+    },
+    {
+      "path": "public/images/filaments/pla-matte-black.png",
+      "bytes": 235645,
+      "sha256": "1eb0a52f05ae4f20064d9e357822f8c91c6dd2461537dd47ceeb6a4f0743af83"
+    },
+    {
+      "path": "public/images/filaments/pla-matte-gray.jpg",
+      "bytes": 16792,
+      "sha256": "dfceeb1aadef80e919df32fdd23d25ed34d6067954ce052fce660eff040474b2"
+    },
+    {
+      "path": "public/images/filaments/pla-matte-green.png",
+      "bytes": 236569,
+      "sha256": "604b4624288faa2501131da0e1acc9a3de55ef2a9b0366bf9f5e953c420f4776"
+    },
+    {
+      "path": "public/images/filaments/pla-matte-navy.png",
+      "bytes": 321039,
+      "sha256": "0e4b6093e6727f27c6618348ca0cdfae11a518f48ac8512692cffdcf429b92bc"
+    },
+    {
+      "path": "public/images/filaments/pla-matte-white.png",
+      "bytes": 175072,
+      "sha256": "f0a8b6988ea9db3762b28bf110d8777c750d1f5e0bb2edc0226ed7e104f04f3a"
+    },
+    {
+      "path": "public/images/filaments/pla-metal-request.png",
+      "bytes": 230742,
+      "sha256": "f94b3a7065714ac48251ea3f9a67070e5af739f3bc1696fdaf26b9d2a8405bb2"
+    },
+    {
+      "path": "public/images/filaments/pla-sparkle-request.png",
+      "bytes": 253388,
+      "sha256": "5e2f5da62129ac40e2bff77682ad7531bbda27d8f7c800df395e613f07228247"
+    },
+    {
+      "path": "public/images/filaments/pla-wood-request.jpg",
+      "bytes": 25113,
+      "sha256": "c0edb168345f37b4d8c08cf7e0ead5d99c36ec1f7039081f0dfb1f83d3ab69da"
+    },
+    {
+      "path": "public/images/filaments/support-for-pla-request.png",
+      "bytes": 216171,
+      "sha256": "0bccd492fa52db11058cc8545a1a43d29c51d425a2354698468a51e9ee2cd078"
+    },
+    {
+      "path": "public/images/filaments/tpu-95a-hf-black.png",
+      "bytes": 184720,
+      "sha256": "8ea62be1a89027eadf1820699483099351fb54753c728e315ace2b54729e5f3d"
+    },
+    {
+      "path": "public/images/filaments/tpu-95a-hf-white.png",
+      "bytes": 118589,
+      "sha256": "7205efa0d5bb7a83d89a1ec4a9cb92aa997f97475d3ad09b61bb472fb5b27434"
+    },
+    {
+      "path": "public/images/parts/a1-0.2-standard.png",
+      "bytes": 64023,
+      "sha256": "1e286ad59a5c0d176c0dde740184266612816df3d577c8d1146f21f34eb4f307"
+    },
+    {
+      "path": "public/images/parts/a1-0.4-hardened.png",
+      "bytes": 57446,
+      "sha256": "81b3010e7045e9d5451973be402255a94f68762400cb48bcc0875618cf23fd53"
+    },
+    {
+      "path": "public/images/parts/a1-0.4-standard.png",
+      "bytes": 57446,
+      "sha256": "81b3010e7045e9d5451973be402255a94f68762400cb48bcc0875618cf23fd53"
+    },
+    {
+      "path": "public/images/parts/a1-0.4-steel.png",
+      "bytes": 63882,
+      "sha256": "22b16031e7db0528648adc43071b4598693fe0d2e7236c3495219d4de8120db6"
+    },
+    {
+      "path": "public/images/parts/a1-0.6-standard.png",
+      "bytes": 57380,
+      "sha256": "9b5ef5421f4fb8eef5e2a5adde51403d5b3561cdfa7e8330eeece08780d4e544"
+    },
+    {
+      "path": "public/images/parts/ams-2-pro.jpg",
+      "bytes": 33769,
+      "sha256": "de3d62c366a02f0f5379291d751c87cc00f612127a37d64fcd6753da22ec8098"
+    },
+    {
+      "path": "public/images/parts/ams-buffer.png",
+      "bytes": 66155,
+      "sha256": "4bafec500f72bac891b45525100c8825d9b5c5f30572a8db720b91d1662bd8ec"
+    },
+    {
+      "path": "public/images/parts/ams-feeder.png",
+      "bytes": 57132,
+      "sha256": "a987e07c849a36e6c92dcd70e009e83000247ae990ebe30f7536a676f398a6fa"
+    },
+    {
+      "path": "public/images/parts/ams-ht.jpg",
+      "bytes": 16826,
+      "sha256": "63d34a09e94efc9541183e809e3249ec8c432ff1fd45c90740d74e37956ed36b"
+    },
+    {
+      "path": "public/images/parts/ams-hub.png",
+      "bytes": 231393,
+      "sha256": "4b2d84d94f5e96f9315e2f76aa76f80c933f933df1c1e41d37c0433b101359d2"
+    },
+    {
+      "path": "public/images/parts/ams-lite.jpg",
+      "bytes": 21195,
+      "sha256": "94bd6a7e2c8da14e9a85385523ddad299904f123174762f8b66f476a16f58b2a"
+    },
+    {
+      "path": "public/images/parts/carbon-filter.png",
+      "bytes": 145986,
+      "sha256": "074da1b8d1ba0318eda3ab2f98193b11ab0dfb83991bbf1833c43dd843c20be8"
+    },
+    {
+      "path": "public/images/parts/desiccant.png",
+      "bytes": 118963,
+      "sha256": "af7d86642669b2aa715d8fe3e963aec6a16e99df5dcec0cd4751cd79f5de7fe0"
+    },
+    {
+      "path": "public/images/parts/filament-cutter.png",
+      "bytes": 71660,
+      "sha256": "d3bbc993493adb778da77b0451384720534410dedc40967722827c4f700f12d2"
+    },
+    {
+      "path": "public/images/parts/glue-stick.png",
+      "bytes": 50345,
+      "sha256": "5541294bb2d9eafc87aef5d19178e8c7878105c1e955e2ce7f12525c07fb9397"
+    },
+    {
+      "path": "public/images/parts/h2d-hotend.jpg",
+      "bytes": 14106,
+      "sha256": "243edbf43e536dc5214da4fa0db5bdbc92f61b7c4dbcc548f1d5b4897e339883"
+    },
+    {
+      "path": "public/images/parts/lubricant.jpg",
+      "bytes": 14657,
+      "sha256": "648b84a6de27b38ebf7c76c9b1779b02ffe45b31319e5faa18fa335707b72bd3"
+    },
+    {
+      "path": "public/images/parts/p1-0.2-standard.png",
+      "bytes": 144686,
+      "sha256": "c9a56b068c8d2eae2eca8d7673995c0ecb5aa219d1e9248d54fc45976eec59ec"
+    },
+    {
+      "path": "public/images/parts/p1-0.4-hardened.png",
+      "bytes": 136764,
+      "sha256": "8ae6c8fdc6277741a501511d506ef2e79f471d177618ce166fbe5508256ed1ba"
+    },
+    {
+      "path": "public/images/parts/p1-0.4-standard.png",
+      "bytes": 136764,
+      "sha256": "8ae6c8fdc6277741a501511d506ef2e79f471d177618ce166fbe5508256ed1ba"
+    },
+    {
+      "path": "public/images/parts/p1-0.6-standard.png",
+      "bytes": 136977,
+      "sha256": "e323e40e27913f997394c997fc5cb37c7889994fc1731110112703069e84e5d6"
+    },
+    {
+      "path": "public/images/parts/repair-belts.png",
+      "bytes": 107936,
+      "sha256": "cf90be2146ce4700c95a93b849ec20043337803feb2984ca9451e6b368eabb4a"
+    },
+    {
+      "path": "public/images/parts/repair-boards.png",
+      "bytes": 203316,
+      "sha256": "7a459ab85ae1d18b72f42092c1a00a442c205d661a22821a2604c7df65a80db5"
+    },
+    {
+      "path": "public/images/parts/repair-extruders.png",
+      "bytes": 143963,
+      "sha256": "58a00ea154889ddde92c602609b61dd13e40477795024984e9cb25036b65761c"
+    },
+    {
+      "path": "public/images/parts/repair-fans.png",
+      "bytes": 145039,
+      "sha256": "b104227c745eb5dcfa507cfac6b70d06684aaee6510bc9e8e1b3aa780a953f8b"
+    },
+    {
+      "path": "public/images/parts/repair-motors.jpg",
+      "bytes": 22116,
+      "sha256": "becc0d7afd521253b4ae378eb694197703e3325b40be53ae4b0f64fac95caec8"
+    },
+    {
+      "path": "public/images/parts/repair-thermistors.png",
+      "bytes": 24259,
+      "sha256": "ef322e5fb6923db995e9a5cbe5009d2a2db3486d55d7765140535f645af00a3e"
+    },
+    {
+      "path": "public/images/parts/reusable-spool.png",
+      "bytes": 194694,
+      "sha256": "13b6c323c7b965a7e00c3ad975fd76c787d8763533cc16a72c0efc3c113fa38b"
+    },
+    {
+      "path": "public/images/parts/silicone-sock.png",
+      "bytes": 70742,
+      "sha256": "95b390c64e9745569151577269ff44dbde447ac06483db4651156d788902bea5"
+    },
+    {
+      "path": "public/images/parts/smooth-256.png",
+      "bytes": 139383,
+      "sha256": "6ff2488aa4466ce4f9da7cdbaf2eee805a806793ee957a67e28b9a734ac7fc62"
+    },
+    {
+      "path": "public/images/parts/supertack-256.png",
+      "bytes": 68851,
+      "sha256": "f1f3b4f55494a14d7535da51aee464c411bdc89fb406aa35ba47bd618adf9d3b"
+    },
+    {
+      "path": "public/images/parts/textured-256.png",
+      "bytes": 304121,
+      "sha256": "529e76da9041307459590fe70837c4125a06af3ee188540f21b15f5f4b3f8646"
+    },
+    {
+      "path": "public/images/parts/textured-mini.png",
+      "bytes": 276623,
+      "sha256": "a1d41344e907326fcfb7738cddfa6758f128a98cba6717a5dce4a17e6490ec8d"
+    },
+    {
+      "path": "public/images/parts/x1-0.2-standard.png",
+      "bytes": 144686,
+      "sha256": "c9a56b068c8d2eae2eca8d7673995c0ecb5aa219d1e9248d54fc45976eec59ec"
+    },
+    {
+      "path": "public/images/parts/x1-0.4-hardened.png",
+      "bytes": 136764,
+      "sha256": "8ae6c8fdc6277741a501511d506ef2e79f471d177618ce166fbe5508256ed1ba"
+    },
+    {
+      "path": "public/images/parts/x1-0.4-standard.png",
+      "bytes": 136764,
+      "sha256": "8ae6c8fdc6277741a501511d506ef2e79f471d177618ce166fbe5508256ed1ba"
+    },
+    {
+      "path": "public/images/parts/x1-0.6-standard.png",
+      "bytes": 136977,
+      "sha256": "e323e40e27913f997394c997fc5cb37c7889994fc1731110112703069e84e5d6"
+    },
+    {
+      "path": "scripts/start.mjs",
+      "bytes": 1118,
+      "sha256": "9b3d4c980e800078b8e0443c1bcf3ebe189dbd516cc1adece865265e5ad4952e"
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.css",
+      "bytes": 16041,
+      "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+    }
+  ]
+}
