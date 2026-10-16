@@ -1,0 +1,298 @@
+{
+  "a1-0.2-standard": {
+    "file": "parts/a1-0.2-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.2.png?v=1712106764",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-a1-series",
+    "manufacturerVariant": "A1 Series / 0.2mm Stainless Steel",
+    "kind": "variant",
+    "handle": "bambu-hotend-a1-series"
+  },
+  "a1-0.4-standard": {
+    "file": "parts/a1-0.4-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.4_8e3295ff-94cb-46bb-a43b-e7a8ac5fe910.png?v=1712106764",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-a1-series",
+    "manufacturerVariant": "A1 Series / 0.4mm Hardened Steel",
+    "kind": "variant",
+    "handle": "bambu-hotend-a1-series"
+  },
+  "a1-0.6-standard": {
+    "file": "parts/a1-0.6-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.6_68068bf9-e121-448b-898d-f31e4b1d7c02.png?v=1712106764",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-a1-series",
+    "manufacturerVariant": "A1 Series / 0.6mm Hardened Steel",
+    "kind": "variant",
+    "handle": "bambu-hotend-a1-series"
+  },
+  "a1-0.4-hardened": {
+    "file": "parts/a1-0.4-hardened.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.4_8e3295ff-94cb-46bb-a43b-e7a8ac5fe910.png?v=1712106764",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-a1-series",
+    "manufacturerVariant": "A1 Series / 0.4mm Hardened Steel",
+    "kind": "variant",
+    "handle": "bambu-hotend-a1-series"
+  },
+  "p1-0.2-standard": {
+    "file": "parts/p1-0.2-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.2mm.png?v=1723707403",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-p1-series",
+    "manufacturerVariant": "0.2mm Stainless Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-p1-series"
+  },
+  "p1-0.4-standard": {
+    "file": "parts/p1-0.4-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.4mm.png?v=1723707403",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-p1-series",
+    "manufacturerVariant": "0.4mm Hardened Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-p1-series"
+  },
+  "p1-0.6-standard": {
+    "file": "parts/p1-0.6-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.6mm.png?v=1723707403",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-p1-series",
+    "manufacturerVariant": "0.6mm Hardened Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-p1-series"
+  },
+  "p1-0.4-hardened": {
+    "file": "parts/p1-0.4-hardened.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.4mm.png?v=1723707403",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-p1-series",
+    "manufacturerVariant": "0.4mm Hardened Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-p1-series"
+  },
+  "x1-0.2-standard": {
+    "file": "parts/x1-0.2-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.2mm_38dd996b-b78a-41aa-be09-a0b4ebc08b6f.png?v=1723707422",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-x1c",
+    "manufacturerVariant": "0.2mm Stainless Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-x1c"
+  },
+  "x1-0.4-standard": {
+    "file": "parts/x1-0.4-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.4mm_85062490-b638-498c-9664-37221476a016.png?v=1723707422",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-x1c",
+    "manufacturerVariant": "0.4mm Hardened Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-x1c"
+  },
+  "x1-0.6-standard": {
+    "file": "parts/x1-0.6-standard.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.6mm_6a23946b-ea5a-431b-b066-a60103dbe709.png?v=1723707422",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-x1c",
+    "manufacturerVariant": "0.6mm Hardened Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-x1c"
+  },
+  "x1-0.4-hardened": {
+    "file": "parts/x1-0.4-hardened.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.4mm_85062490-b638-498c-9664-37221476a016.png?v=1723707422",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-x1c",
+    "manufacturerVariant": "0.4mm Hardened Steel / Complete Hotend",
+    "kind": "variant",
+    "handle": "bambu-hotend-x1c"
+  },
+  "a1-0.4-steel": {
+    "file": "parts/a1-0.4-steel.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/0.4_6c7827ac-f37d-4e1b-a9b9-f6412cabef4c.png?v=1712106764",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-a1-series",
+    "manufacturerVariant": "A1 Series / 0.4mm Stainless Steel",
+    "kind": "variant",
+    "handle": "bambu-hotend-a1-series"
+  },
+  "h2d-hotend": {
+    "file": "parts/h2d-hotend.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/FAH023-2.jpg?v=1742897968",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-hotend-h2d",
+    "manufacturerVariant": "H2D and H2D Laser / 0.4mm Hardened Steel",
+    "kind": "family",
+    "handle": "bambu-hotend-h2d"
+  },
+  "silicone-sock": {
+    "file": "parts/silicone-sock.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/20221010-095254.png?v=1665988543",
+    "sourcePage": "https://eu.store.bambulab.com/products/silicone-sock-for-hotend",
+    "manufacturerVariant": "X1 Series and P1 Series",
+    "kind": "family",
+    "handle": "silicone-sock-for-hotend"
+  },
+  "textured-mini": {
+    "file": "parts/textured-mini.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/FAP009.png?v=1742959128",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-textured-pei-plate",
+    "manufacturerVariant": "A1 mini",
+    "kind": "family",
+    "handle": "bambu-textured-pei-plate"
+  },
+  "textured-256": {
+    "file": "parts/textured-256.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/FAP007.png?v=1742959128",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-textured-pei-plate",
+    "manufacturerVariant": "X1 Series/P1 Series/A1",
+    "kind": "family",
+    "handle": "bambu-textured-pei-plate"
+  },
+  "smooth-256": {
+    "file": "parts/smooth-256.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/FAP010_SGL001.png?v=1721983117",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-smooth-pei-plate-with-glue",
+    "manufacturerVariant": "X1 Series/P1 Series/A1 / Glue Stick",
+    "kind": "family",
+    "handle": "bambu-smooth-pei-plate-with-glue"
+  },
+  "supertack-256": {
+    "file": "parts/supertack-256.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/71ddb0d4f6d5031389b036ccd92658dd.png?v=1731378238",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-cool-plate-supertack",
+    "manufacturerVariant": "X1 Series/P1 Series/A1",
+    "kind": "family",
+    "handle": "bambu-cool-plate-supertack"
+  },
+  "glue-stick": {
+    "file": "parts/glue-stick.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/1_7185691f-b551-4cb4-9a22-4ded834dfa48.png?v=1690352037",
+    "sourcePage": "https://eu.store.bambulab.com/products/glue-stick-for-build-plate",
+    "manufacturerVariant": "All Series",
+    "kind": "family",
+    "handle": "glue-stick-for-build-plate"
+  },
+  "lubricant": {
+    "file": "parts/lubricant.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/FAZ031.jpg?v=1733099547",
+    "sourcePage": "https://eu.store.bambulab.com/products/lubricant-oil",
+    "manufacturerVariant": "All Series",
+    "kind": "family",
+    "handle": "lubricant-oil"
+  },
+  "filament-cutter": {
+    "file": "parts/filament-cutter.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/4a5b75a0b5eb47e4081ac4bb13a8080d_6670af1b-87ee-478c-8383-f374d251234e.png?v=1711939225",
+    "sourcePage": "https://eu.store.bambulab.com/products/replacement-filament-cutter",
+    "manufacturerVariant": "X1 Series/P1 Series/A1 Series",
+    "kind": "family",
+    "handle": "replacement-filament-cutter"
+  },
+  "carbon-filter": {
+    "file": "parts/carbon-filter.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/bfe4a1cea2b88cc78620534bf4073dff_adf6d6e4-244f-4330-89e4-757218137b60.png?v=1656561732",
+    "sourcePage": "https://eu.store.bambulab.com/products/activated-carbon-air-filter",
+    "manufacturerVariant": "X1 Series and P1S",
+    "kind": "family",
+    "handle": "activated-carbon-air-filter"
+  },
+  "reusable-spool": {
+    "file": "parts/reusable-spool.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/20230830-101544.png?v=1701398867",
+    "sourcePage": "https://eu.store.bambulab.com/products/bambu-reusable-spool",
+    "manufacturerVariant": "Reusable Spool",
+    "kind": "family",
+    "handle": "bambu-reusable-spool"
+  },
+  "desiccant": {
+    "file": "parts/desiccant.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/c509f68919d5b44b6232547c209825ce.png?v=1670309500",
+    "sourcePage": "https://eu.store.bambulab.com/products/desiccant-for-ams",
+    "manufacturerVariant": "X1 Series and P1 Series",
+    "kind": "family",
+    "handle": "desiccant-for-ams"
+  },
+  "ams-feeder": {
+    "file": "parts/ams-feeder.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/20220923-104247.png?v=1664267721",
+    "sourcePage": "https://eu.store.bambulab.com/products/ams-feeder-unit-hall",
+    "manufacturerVariant": "AMS",
+    "kind": "family",
+    "handle": "ams-feeder-unit-hall"
+  },
+  "ams-buffer": {
+    "file": "parts/ams-buffer.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/filamentsbuffer-1.png?v=1657023350",
+    "sourcePage": "https://eu.store.bambulab.com/products/filament-buffer",
+    "manufacturerVariant": "X1 Series and P1 Series",
+    "kind": "family",
+    "handle": "filament-buffer"
+  },
+  "ams-hub": {
+    "file": "parts/ams-hub.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/a48f8e8fd473b2275ef04b008e8779ba_66ced993-ab04-455c-a0f8-7439c4fb1cc1.png?v=1687314364",
+    "sourcePage": "https://eu.store.bambulab.com/products/ams-hub",
+    "manufacturerVariant": "X1 Series and P1 Series",
+    "kind": "family",
+    "handle": "ams-hub"
+  },
+  "ams-lite": {
+    "file": "parts/ams-lite.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/20231215-121309.jpg?v=1742963796",
+    "sourcePage": "https://eu.store.bambulab.com/products/ams-lite",
+    "manufacturerVariant": "A1 Series / In stock, shipped in 2-3 business days",
+    "kind": "family",
+    "handle": "ams-lite"
+  },
+  "ams-2-pro": {
+    "file": "parts/ams-2-pro.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/ams_b1225305-0e22-46eb-bbd3-fa56595c1526.jpg?v=1742962543",
+    "sourcePage": "https://eu.store.bambulab.com/products/ams-2-pro",
+    "manufacturerVariant": "All series, with A1 series support in Q3 2025.",
+    "kind": "family",
+    "handle": "ams-2-pro"
+  },
+  "ams-ht": {
+    "file": "parts/ams-ht.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/20250326-140731.jpg?v=1742970021",
+    "sourcePage": "https://eu.store.bambulab.com/products/ams-ht",
+    "manufacturerVariant": "All series, with A1 series support in Q3 2025. / ETD: ship around June.18",
+    "kind": "family",
+    "handle": "ams-ht"
+  },
+  "repair-belts": {
+    "file": "parts/repair-belts.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/XY2pcs.png?v=1679393697",
+    "sourcePage": "https://eu.store.bambulab.com/products/xy-belt",
+    "manufacturerVariant": "X1 Series and P1 Series",
+    "kind": "family",
+    "handle": "xy-belt"
+  },
+  "repair-motors": {
+    "file": "parts/repair-motors.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/SPP051-XYMotor.jpg?v=1706240921",
+    "sourcePage": "https://eu.store.bambulab.com/products/xy-motor",
+    "manufacturerVariant": "X1 Series and P1 Series",
+    "kind": "family",
+    "handle": "xy-motor"
+  },
+  "repair-fans": {
+    "file": "parts/repair-fans.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/hotendfan.png?v=1658374030",
+    "sourcePage": "https://eu.store.bambulab.com/products/cooling-fan-for-hotend-x1-series",
+    "manufacturerVariant": "X1C",
+    "kind": "family",
+    "handle": "cooling-fan-for-hotend-x1-series"
+  },
+  "repair-boards": {
+    "file": "parts/repair-boards.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/SPP042.png?v=1690855155",
+    "sourcePage": "https://eu.store.bambulab.com/products/extruder-interface-board-v9",
+    "manufacturerVariant": "X1 Series Exclusive",
+    "kind": "family",
+    "handle": "extruder-interface-board-v9"
+  },
+  "repair-extruders": {
+    "file": "parts/repair-extruders.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/20220927-170206.png?v=1664270357",
+    "sourcePage": "https://eu.store.bambulab.com/products/hardened-steel-extruder-unit-x1-series",
+    "manufacturerVariant": "X1C",
+    "kind": "family",
+    "handle": "hardened-steel-extruder-unit-x1-series"
+  },
+  "repair-thermistors": {
+    "file": "parts/repair-thermistors.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/ThermistorforHotend3.png?v=1675300089",
+    "sourcePage": "https://eu.store.bambulab.com/products/thermistor-x1-series",
+    "manufacturerVariant": "X1C",
+    "kind": "family",
+    "handle": "thermistor-x1-series"
+  }
+}

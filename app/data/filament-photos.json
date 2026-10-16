@@ -1,0 +1,261 @@
+{
+  "PLA Basic|black": {
+    "file": "filaments/pla-basic-black.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/PLA-Basic_Black_29c482c8-ccd6-4559-bf2b-058f7d0d798f.png?v=1737095626",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Black (10101)"
+  },
+  "PLA Basic|white": {
+    "file": "filaments/pla-basic-white.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/White.jpg?v=1736242873",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Jade White (10100)"
+  },
+  "PLA Basic|gray": {
+    "file": "filaments/pla-basic-gray.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/PLA-Basic_Gray.png?v=1737095626",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Gray (10103)"
+  },
+  "PLA Basic|red": {
+    "file": "filaments/pla-basic-red.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/Red.jpg?v=1737095626",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Red (10200)"
+  },
+  "PLA Basic|blue": {
+    "file": "filaments/pla-basic-blue.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PLABasicBlue.jpg?v=1737095626",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Blue (10601)"
+  },
+  "PLA Basic|yellow": {
+    "file": "filaments/pla-basic-yellow.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/Yellow.jpg?v=1736242873",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Yellow (10400)"
+  },
+  "PLA Basic|green": {
+    "file": "filaments/pla-basic-green.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/Bambu_Green.jpg?v=1737095626",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Bambu Green (10501)"
+  },
+  "PLA Basic|orange": {
+    "file": "filaments/pla-basic-orange.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/Orange.jpg?v=1738745357",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Orange (10300)"
+  },
+  "PLA Basic|beige": {
+    "file": "filaments/pla-basic-beige.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/Beige.jpg?v=1736242873",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-basic-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Beige (10201)"
+  },
+  "PLA Matte|black": {
+    "file": "filaments/pla-matte-black.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/PLA-Matte_Charcoal.png?v=1717491277",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-matte",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Matte Charcoal (11101)"
+  },
+  "PLA Matte|white": {
+    "file": "filaments/pla-matte-white.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/PLA-Matte_Ivory-White.png?v=1710931478",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-matte",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Matte Ivory White (11100)"
+  },
+  "PLA Matte|gray": {
+    "file": "filaments/pla-matte-gray.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/1_ea5b7083-7377-4995-bef2-6c066be034b2.jpg?v=1738815736",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-matte",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Matte Nardo Gray (11104)"
+  },
+  "PLA Matte|beige": {
+    "file": "filaments/pla-matte-beige.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PLAMattedeserttan2.png?v=1717491277",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-matte",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Matte Desert Tan (11401)"
+  },
+  "PLA Matte|navy": {
+    "file": "filaments/pla-matte-navy.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/plamattedark_3.png?v=1717491277",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-matte",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Matte Dark Blue (11602)"
+  },
+  "PLA Matte|green": {
+    "file": "filaments/pla-matte-green.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/PLA-Matte_Grass-Green.png?v=1717491277",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-matte",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / Matte Grass Green (11500)"
+  },
+  "PETG HF|black": {
+    "file": "filaments/petg-hf-black.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG_HF_6.jpg?v=1721201479",
+    "sourcePage": "https://eu.store.bambulab.com/products/petg-hf",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1 kg / Black (33102)"
+  },
+  "PETG HF|white": {
+    "file": "filaments/petg-hf-white.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG_HF_7.jpg?v=1721201479",
+    "sourcePage": "https://eu.store.bambulab.com/products/petg-hf",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1 kg / White (33100)"
+  },
+  "PETG HF|gray": {
+    "file": "filaments/petg-hf-gray.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG_HF_1.jpg?v=1721201479",
+    "sourcePage": "https://eu.store.bambulab.com/products/petg-hf",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1 kg / Gray (33101)"
+  },
+  "Support for PLA|request": {
+    "file": "filaments/support-for-pla-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/Support3.png?v=1742785118",
+    "sourcePage": "https://eu.store.bambulab.com/products/support-for-pla-new",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 0.5 kg / White (65104)"
+  },
+  "ABS|black": {
+    "file": "filaments/abs-black.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/ABS_Black.png?v=1735869590",
+    "sourcePage": "https://eu.store.bambulab.com/products/abs-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / ABS Black (40101)"
+  },
+  "ABS|white": {
+    "file": "filaments/abs-white.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/products/ABS_White.png?v=1735869590",
+    "sourcePage": "https://eu.store.bambulab.com/products/abs-filament",
+    "kind": "color",
+    "manufacturerVariant": "Refill / 1kg / ABS White (40100)"
+  },
+  "ASA|black": {
+    "file": "filaments/asa-black.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/black.png?v=1741320571",
+    "sourcePage": "https://eu.store.bambulab.com/products/asa-filament",
+    "kind": "color",
+    "manufacturerVariant": "Filament with spool / 1kg / Black (45101)"
+  },
+  "ASA|white": {
+    "file": "filaments/asa-white.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/white.png?v=1741591687",
+    "sourcePage": "https://eu.store.bambulab.com/products/asa-filament",
+    "kind": "color",
+    "manufacturerVariant": "Filament with spool / 1kg / White (45100)"
+  },
+  "TPU 95A HF|black": {
+    "file": "filaments/tpu-95a-hf-black.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/TPUHF_2.png?v=1741084471",
+    "sourcePage": "https://eu.store.bambulab.com/products/tpu-95a-hf",
+    "kind": "color",
+    "manufacturerVariant": "Filament with spool / 1 kg / Black (51100)"
+  },
+  "TPU 95A HF|white": {
+    "file": "filaments/tpu-95a-hf-white.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/TPUHF_1.png?v=1741592397",
+    "sourcePage": "https://eu.store.bambulab.com/products/tpu-95a-hf",
+    "kind": "color",
+    "manufacturerVariant": "Filament with spool / 1 kg / White (51102)"
+  },
+  "PLA-CF|black": {
+    "file": "filaments/pla-cf-black.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PLA-CFBlack.jpg?v=1717491303",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-cf",
+    "kind": "color",
+    "manufacturerVariant": "Filament with spool / 1 kg / Black (14100)"
+  },
+  "PLA Galaxy|request": {
+    "file": "filaments/pla-galaxy-request.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/purle.jpg?v=1741591770",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-galaxy",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 1 kg / Purple (13602)"
+  },
+  "PLA Marble|request": {
+    "file": "filaments/pla-marble-request.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/A07-R5-1.75-1000-spl.jpg?v=1715324339",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-marble",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 1kg / Red Granite (13201)"
+  },
+  "PLA Sparkle|request": {
+    "file": "filaments/pla-sparkle-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/Sparklegreen.png?v=1717413555",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-sparkle",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 1 kg / Alpine Green Sparkle (13501)"
+  },
+  "PLA Metal|request": {
+    "file": "filaments/pla-metal-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/A02-B2-1.75-1000-spl.png?v=1741591713",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-metal",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 1 kg / Cobalt Blue Metallic (13600)"
+  },
+  "PLA Glow|request": {
+    "file": "filaments/pla-glow-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/e40cbbf6e7fed96557d8e2be99e4b9cf_874f9392-3fe3-4c65-87cc-91b158674eb3.png?v=1741591652",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-glow",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 1 kg / Glow Orange (15300)"
+  },
+  "PLA Wood|request": {
+    "file": "filaments/pla-wood-request.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/5_335a103f-01a9-4d9e-90e1-f09e885ea39a.jpg?v=1741591590",
+    "sourcePage": "https://eu.store.bambulab.com/products/pla-wood",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / Classic Birch (13505) / 1 kg"
+  },
+  "PETG-CF|request": {
+    "file": "filaments/petg-cf-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG-CFpurp_37ad5532-5d64-4eb9-90b0-d183f2511e9e.png?v=1701418958",
+    "sourcePage": "https://eu.store.bambulab.com/products/petg-cf",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 1 kg / Violet Purple (31700)"
+  },
+  "PC|request": {
+    "file": "filaments/pc-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/C00-C1-1.75-1000-spl.png?v=1715323655",
+    "sourcePage": "https://eu.store.bambulab.com/products/pc-filament",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 1kg / Transparent (60103)"
+  },
+  "PAHT-CF|request": {
+    "file": "filaments/paht-cf-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PAHTCFORIGINAL.png?v=1684592088",
+    "sourcePage": "https://eu.store.bambulab.com/products/paht-cf",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 0.5 kg / Black (70100)"
+  },
+  "PA6-CF|request": {
+    "file": "filaments/pa6-cf-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PA6-CF.png?v=1693188546",
+    "sourcePage": "https://eu.store.bambulab.com/products/pa6-cf",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 0.5kg / Black (72100)"
+  },
+  "PET-CF|request": {
+    "file": "filaments/pet-cf-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/pet-cr.png?v=1685412664",
+    "sourcePage": "https://eu.store.bambulab.com/products/pet-cf",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 0.5 kg / Black (71100)"
+  }
+}

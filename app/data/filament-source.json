@@ -1,0 +1,432 @@
+[
+  {
+    "sourceRow": 6,
+    "sourceId": 1,
+    "material": "PLA Basic",
+    "color": "Чёрный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 7,
+    "sourceId": 2,
+    "material": "PLA Basic",
+    "color": "Белый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 8,
+    "sourceId": 3,
+    "material": "PLA Basic",
+    "color": "Серый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 9,
+    "sourceId": 4,
+    "material": "PLA Basic",
+    "color": "Красный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 10,
+    "sourceId": 5,
+    "material": "PLA Basic",
+    "color": "Синий",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 11,
+    "sourceId": 6,
+    "material": "PLA Basic",
+    "color": "Жёлтый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 12,
+    "sourceId": 7,
+    "material": "PLA Basic",
+    "color": "Зелёный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 13,
+    "sourceId": 8,
+    "material": "PLA Basic",
+    "color": "Оранжевый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 14,
+    "sourceId": 9,
+    "material": "PLA Basic",
+    "color": "Бежевый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 15,
+    "sourceId": 10,
+    "material": "PLA Basic",
+    "color": "Прозрачный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 16,
+    "sourceId": 11,
+    "material": "PLA Matte",
+    "color": "Чёрный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 17,
+    "sourceId": 12,
+    "material": "PLA Matte",
+    "color": "Белый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 18,
+    "sourceId": 13,
+    "material": "PLA Matte",
+    "color": "Серый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 19,
+    "sourceId": 14,
+    "material": "PLA Matte",
+    "color": "Бежевый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 20,
+    "sourceId": 15,
+    "material": "PLA Matte",
+    "color": "Тёмно-синий",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 21,
+    "sourceId": 16,
+    "material": "PLA Matte",
+    "color": "Зелёный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 22,
+    "sourceId": 17,
+    "material": "PETG HF",
+    "color": "Чёрный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 23,
+    "sourceId": 18,
+    "material": "PETG HF",
+    "color": "Белый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 24,
+    "sourceId": 19,
+    "material": "PETG HF",
+    "color": "Серый",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 25,
+    "sourceId": 20,
+    "material": "PETG HF",
+    "color": "Прозрачный",
+    "format": "Катушка + рефил",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 26,
+    "sourceId": 21,
+    "material": "Support for PLA",
+    "color": "—",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 27,
+    "sourceId": 22,
+    "material": "PLA Silk",
+    "color": "Цвет 1",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": "Выбрать 2–3 ходовых цвета",
+    "price": null
+  },
+  {
+    "sourceRow": 28,
+    "sourceId": 23,
+    "material": "PLA Silk",
+    "color": "Цвет 2",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": "Выбрать 2–3 ходовых цвета",
+    "price": null
+  },
+  {
+    "sourceRow": 29,
+    "sourceId": 24,
+    "material": "PLA Silk",
+    "color": "Цвет 3",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": "Выбрать 2–3 ходовых цвета",
+    "price": null
+  },
+  {
+    "sourceRow": 30,
+    "sourceId": 25,
+    "material": "ABS",
+    "color": "Чёрный",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 31,
+    "sourceId": 26,
+    "material": "ABS",
+    "color": "Белый",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 32,
+    "sourceId": 27,
+    "material": "ASA",
+    "color": "Чёрный",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 33,
+    "sourceId": 28,
+    "material": "ASA",
+    "color": "Белый",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 34,
+    "sourceId": 29,
+    "material": "TPU 95A HF",
+    "color": "Чёрный",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 35,
+    "sourceId": 30,
+    "material": "TPU 95A HF",
+    "color": "Белый",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 36,
+    "sourceId": 31,
+    "material": "PLA-CF",
+    "color": "Чёрный",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": "Нужен закалённый хотэнд — продавать в паре",
+    "price": null
+  },
+  {
+    "sourceRow": 37,
+    "sourceId": 32,
+    "material": "PLA Galaxy",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 38,
+    "sourceId": 33,
+    "material": "PLA Marble",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 39,
+    "sourceId": 34,
+    "material": "PLA Sparkle",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 40,
+    "sourceId": 35,
+    "material": "PLA Metal",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 41,
+    "sourceId": 36,
+    "material": "PLA Glow",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 42,
+    "sourceId": 37,
+    "material": "PLA Wood",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 43,
+    "sourceId": 38,
+    "material": "PETG-CF",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 44,
+    "sourceId": 39,
+    "material": "PC",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 45,
+    "sourceId": 40,
+    "material": "PAHT-CF",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 46,
+    "sourceId": 41,
+    "material": "PA6-CF",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 47,
+    "sourceId": 42,
+    "material": "PET-CF",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 48,
+    "sourceId": 43,
+    "material": "PVA / Support W",
+    "color": "По запросу",
+    "format": "Катушка",
+    "plannedLocation": "Под заказ",
+    "note": null,
+    "price": null
+  }
+]

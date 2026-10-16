@@ -1,0 +1,361 @@
+{
+  "rows": [
+    {
+      "sourceRow": 6,
+      "sourceId": 1,
+      "category": "Хотэнды и сопла",
+      "name": "Хотэнд в сборе 0,4 мм (сталь)",
+      "sourceModels": "A1 / A1 mini",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 7,
+      "sourceId": 2,
+      "category": "Хотэнды и сопла",
+      "name": "Хотэнд в сборе 0,4 мм",
+      "sourceModels": "P1S / P1P / X1C",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 8,
+      "sourceId": 3,
+      "category": "Хотэнды и сопла",
+      "name": "Хотэнд закалённый 0,4 мм (для CF/GF)",
+      "sourceModels": "A1, P1, X1",
+      "plannedLocation": "Склад",
+      "note": "1–2 шт.",
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 9,
+      "sourceId": 4,
+      "category": "Хотэнды и сопла",
+      "name": "Хотэнд / сопло 0,2 мм (мелкие детали)",
+      "sourceModels": "A1, P1, X1",
+      "plannedLocation": "Склад",
+      "note": "1–2 шт.",
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 10,
+      "sourceId": 5,
+      "category": "Хотэнды и сопла",
+      "name": "Хотэнд / сопло 0,6 мм (быстрая печать)",
+      "sourceModels": "A1, P1, X1",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 11,
+      "sourceId": 6,
+      "category": "Хотэнды и сопла",
+      "name": "Хотэнды для P2S, H2D, H2C",
+      "sourceModels": "P2S, H2",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 12,
+      "sourceId": 7,
+      "category": "Хотэнды и сопла",
+      "name": "Силиконовый чехол на хотэнд",
+      "sourceModels": "Все",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 13,
+      "sourceId": 8,
+      "category": "Печатные пластины",
+      "name": "Textured PEI Plate 180 мм",
+      "sourceModels": "A1 mini",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 14,
+      "sourceId": 9,
+      "category": "Печатные пластины",
+      "name": "Textured PEI Plate 256 мм",
+      "sourceModels": "A1 / P1 / X1",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 15,
+      "sourceId": 10,
+      "category": "Печатные пластины",
+      "name": "Smooth PEI / Cool Plate SuperTack",
+      "sourceModels": "A1, P1, X1",
+      "plannedLocation": "Склад",
+      "note": "1–2 шт.",
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 16,
+      "sourceId": 11,
+      "category": "Печатные пластины",
+      "name": "Engineering Plate",
+      "sourceModels": "P1, X1",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 17,
+      "sourceId": 12,
+      "category": "Мелкие расходники",
+      "name": "Клей-карандаш",
+      "sourceModels": "Все",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 18,
+      "sourceId": 13,
+      "category": "Мелкие расходники",
+      "name": "Смазка (масло + густая смазка)",
+      "sourceModels": "Все",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 19,
+      "sourceId": 14,
+      "category": "Мелкие расходники",
+      "name": "Тефлоновые трубки (PTFE)",
+      "sourceModels": "Все, AMS",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 20,
+      "sourceId": 15,
+      "category": "Мелкие расходники",
+      "name": "Нож для обрезки филамента в голове",
+      "sourceModels": "A1, P1, X1",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 21,
+      "sourceId": 16,
+      "category": "Мелкие расходники",
+      "name": "Иглы и щётки для чистки сопла",
+      "sourceModels": "Все",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 22,
+      "sourceId": 17,
+      "category": "Мелкие расходники",
+      "name": "Угольный фильтр",
+      "sourceModels": "P1S, X1C",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 23,
+      "sourceId": 18,
+      "category": "AMS",
+      "name": "Многоразовая катушка под рефилы",
+      "sourceModels": "Все с AMS",
+      "plannedLocation": "Склад",
+      "note": "Без неё рефил не поставить",
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 24,
+      "sourceId": 19,
+      "category": "AMS",
+      "name": "Влагопоглотитель (силикагель)",
+      "sourceModels": "AMS, AMS Lite",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 25,
+      "sourceId": 20,
+      "category": "AMS",
+      "name": "Подающие ролики, буфер, хабы",
+      "sourceModels": "AMS, AMS Lite",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 26,
+      "sourceId": 21,
+      "category": "AMS",
+      "name": "AMS Lite / AMS 2 Pro / AMS HT целиком",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 27,
+      "sourceId": 22,
+      "category": "Хранение и сушка",
+      "name": "Сушилка для филамента на 1–2 катушки",
+      "sourceModels": "Все",
+      "plannedLocation": "Склад",
+      "note": "2–3 шт.; сторонний бренд, если у Bambu нет отдельной",
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 28,
+      "sourceId": 23,
+      "category": "Хранение и сушка",
+      "name": "Вакуумные пакеты для хранения катушек",
+      "sourceModels": "Все",
+      "plannedLocation": "Склад",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 29,
+      "sourceId": 24,
+      "category": "Ремонт",
+      "name": "Ремни",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 30,
+      "sourceId": 25,
+      "category": "Ремонт",
+      "name": "Моторы",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 31,
+      "sourceId": 26,
+      "category": "Ремонт",
+      "name": "Вентиляторы",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 32,
+      "sourceId": 27,
+      "category": "Ремонт",
+      "name": "Платы",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 33,
+      "sourceId": 28,
+      "category": "Ремонт",
+      "name": "Экструдеры",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 34,
+      "sourceId": 29,
+      "category": "Ремонт",
+      "name": "Термисторы",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    },
+    {
+      "sourceRow": 35,
+      "sourceId": 30,
+      "category": "Ремонт",
+      "name": "Кабели",
+      "sourceModels": "По модели",
+      "plannedLocation": "Под заказ",
+      "note": null,
+      "price": null,
+      "leadTime": null
+    }
+  ],
+  "sets": [
+    {
+      "sourceRow": 4,
+      "name": "Набор «обслуживание A1»",
+      "action": "Хотэнд + пластина + смазка + иглы"
+    },
+    {
+      "sourceRow": 5,
+      "name": "Набор «обслуживание P1S»",
+      "action": "Хотэнд + пластина + смазка + иглы"
+    },
+    {
+      "sourceRow": 6,
+      "name": "Карточка PLA",
+      "action": "Ссылки на клей-карандаш и пластину"
+    },
+    {
+      "sourceRow": 7,
+      "name": "Карточка PETG",
+      "action": "Ссылка на сушилку"
+    },
+    {
+      "sourceRow": 8,
+      "name": "Позиции «Под заказ»",
+      "action": "Показывать срок доставки, например «7–10 дней»"
+    }
+  ]
+}
