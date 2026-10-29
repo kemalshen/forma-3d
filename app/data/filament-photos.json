@@ -147,8 +147,8 @@
     "manufacturerVariant": "Refill / 1kg / ABS White (40100)"
   },
   "ASA|black": {
-    "file": "filaments/asa-black.png",
-    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/black.png?v=1741320571",
+    "file": "filaments/spool-black.webp",
+    "source": "Bambu Lab, фото катушки; цвет нити приведён к чёрному",
     "sourcePage": "https://eu.store.bambulab.com/products/asa-filament",
     "kind": "color",
     "manufacturerVariant": "Filament with spool / 1kg / Black (45101)"
@@ -259,24 +259,24 @@
     "manufacturerVariant": "Filament with spool / 0.5 kg / Black (71100)"
   },
   "PETG Basic|black": {
-    "file": "filaments/petg-hf-black.jpg",
-    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG_HF_6.jpg?v=1721201479",
-    "sourcePage": "https://eu.store.bambulab.com/products/petg-hf",
+    "file": "filaments/spool-black.webp",
+    "source": "Bambu Lab, фото катушки; цвет нити приведён к чёрному",
+    "sourcePage": "https://us.store.bambulab.com/products/petg-basic",
     "kind": "color",
-    "manufacturerVariant": "PETG HF Black (фото похожей катушки)"
+    "manufacturerVariant": "Filament with spool / 1kg / Black (30101)"
   },
   "PETG Basic|gray": {
-    "file": "filaments/petg-hf-gray.jpg",
-    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG_HF_1.jpg?v=1721201479",
-    "sourcePage": "https://eu.store.bambulab.com/products/petg-hf",
+    "file": "filaments/petg-basic-gray-spool.webp",
+    "source": "Bambu Lab, фото «Filament with spool» (прислал владелец)",
+    "sourcePage": "https://us.store.bambulab.com/products/petg-basic",
     "kind": "color",
-    "manufacturerVariant": "PETG HF Gray (фото похожей катушки)"
+    "manufacturerVariant": "Filament with spool / 1kg / Gray (30102)"
   },
   "PAHT-CF|black": {
-    "file": "filaments/paht-cf-request.png",
-    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PAHTCFORIGINAL.png?v=1684592088",
+    "file": "filaments/spool-black.webp",
+    "source": "Bambu Lab, фото катушки; цвет нити приведён к чёрному",
     "sourcePage": "https://eu.store.bambulab.com/products/paht-cf",
-    "kind": "family",
-    "manufacturerVariant": "Filament with spool / 0.5 kg / Black (70100)"
+    "kind": "color",
+    "manufacturerVariant": "Filament with spool / Black (70100)"
   }
 }
