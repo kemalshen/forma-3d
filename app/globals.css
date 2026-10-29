@@ -112,3 +112,10 @@
 /* Цвета товара не вылезают за экран на телефоне */
 .color-tiles{flex-wrap:wrap}
 .page-wrap .print-service{margin:56px 0;width:100%}
+
+/* Баннер с хотэндом */
+.hero-actions .button.outline{gap:12px}
+.hero-visual-hotend>img{mix-blend-mode:normal;object-fit:contain;height:300px;width:200px;left:50%;top:105px;transform:rotate(14deg);filter:drop-shadow(18px 26px 14px #3c5a1a40)}
+.hero-visual-hotend .hero-product>div>span{letter-spacing:1px}
+@media(max-width:1150px){.hero-visual-hotend>img{height:230px;width:150px;left:60%;top:70px}}
+@media(max-width:640px){.hero-actions{flex-wrap:wrap}.hero-actions .button{flex:1 1 auto}.hero-visual-hotend>img{height:175px;width:120px;left:60%;top:28px;transform:rotate(14deg)}}
