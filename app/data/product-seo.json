@@ -1,0 +1,765 @@
+{
+ "pla-basic-green": {
+  "title_ru": "Bambu Lab PLA Basic зелёный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic зелёный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic yashil, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic yashil — g‘altakda 1 kg"
+ },
+ "pla-basic-green-refill": {
+  "title_ru": "Bambu Lab PLA Basic зелёный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic зелёный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic yashil, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic yashil — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-black": {
+  "title_ru": "Bambu Lab PLA Basic чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic qora — g‘altakda 1 kg"
+ },
+ "pla-basic-black-refill": {
+  "title_ru": "Bambu Lab PLA Basic чёрный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic чёрный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic qora, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic qora — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-blue": {
+  "title_ru": "Bambu Lab PLA Basic синий, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic синий — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic ko‘k, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic ko‘k — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-blue-spool": {
+  "title_ru": "Bambu Lab PLA Basic синий, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic синий — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic ko‘k, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic ko‘k — g‘altakda 1 kg"
+ },
+ "pla-basic-gray-spool": {
+  "title_ru": "Bambu Lab PLA Basic серый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic серый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic kulrang, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic kulrang — g‘altakda 1 kg"
+ },
+ "pla-basic-gray-refill": {
+  "title_ru": "Bambu Lab PLA Basic серый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic серый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic kulrang, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic kulrang — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-white-spool": {
+  "title_ru": "Bambu Lab PLA Basic белый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic белый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic oq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic oq — g‘altakda 1 kg"
+ },
+ "pla-basic-white-refill": {
+  "title_ru": "Bambu Lab PLA Basic белый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic белый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic oq, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic oq — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-transparent-spool": {
+  "title_ru": "Bambu Lab PLA Basic прозрачный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic прозрачный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic shaffof, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic shaffof — g‘altakda 1 kg"
+ },
+ "pla-basic-transparent-refill": {
+  "title_ru": "PLA Basic прозрачный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic прозрачный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic shaffof, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic shaffof — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-orange-spool": {
+  "title_ru": "Bambu Lab PLA Basic оранжевый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic оранжевый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic to‘q sariq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic to‘q sariq — g‘altakda 1 kg"
+ },
+ "pla-basic-orange-refill": {
+  "title_ru": "Bambu Lab PLA Basic оранжевый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic оранжевый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "PLA Basic to‘q sariq, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic to‘q sariq — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-red-spool": {
+  "title_ru": "Bambu Lab PLA Basic красный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic красный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic qizil, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic qizil — g‘altakda 1 kg"
+ },
+ "pla-basic-red-refill": {
+  "title_ru": "Bambu Lab PLA Basic красный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic красный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic qizil, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic qizil — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-yellow-spool": {
+  "title_ru": "Bambu Lab PLA Basic жёлтый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic жёлтый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic sariq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic sariq — g‘altakda 1 kg"
+ },
+ "pla-basic-yellow-refill": {
+  "title_ru": "Bambu Lab PLA Basic жёлтый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic жёлтый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic sariq, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic sariq — refill 1 kg, g‘altaksiz"
+ },
+ "pla-basic-beige-spool": {
+  "title_ru": "Bambu Lab PLA Basic бежевый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic бежевый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Basic bej, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic bej — g‘altakda 1 kg"
+ },
+ "pla-basic-beige-refill": {
+  "title_ru": "Bambu Lab PLA Basic бежевый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Basic бежевый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Basic bej, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Basic bej — refill 1 kg, g‘altaksiz"
+ },
+ "pla-matte-white": {
+  "title_ru": "Bambu Lab PLA Matte Ivory White, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte белый Ivory White — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Matte Ivory White, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte Ivory White oq — g‘altakda 1 kg"
+ },
+ "pla-matte-white-refill": {
+  "title_ru": "Bambu Lab PLA Matte белый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte белый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Matte oq, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte oq — refill 1 kg, g‘altaksiz"
+ },
+ "pla-matte-gray-spool": {
+  "title_ru": "Bambu Lab PLA Matte серый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte серый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Matte kulrang, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte kulrang — g‘altakda 1 kg"
+ },
+ "pla-matte-gray-refill": {
+  "title_ru": "Bambu Lab PLA Matte серый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte серый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Matte kulrang, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte kulrang — refill 1 kg, g‘altaksiz"
+ },
+ "pla-matte-beige-spool": {
+  "title_ru": "Bambu Lab PLA Matte бежевый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte бежевый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Matte bej, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte bej — g‘altakda 1 kg"
+ },
+ "pla-matte-beige-refill": {
+  "title_ru": "Bambu Lab PLA Matte бежевый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte бежевый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Matte bej, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte bej — refill 1 kg, g‘altaksiz"
+ },
+ "pla-matte-black-spool": {
+  "title_ru": "Bambu Lab PLA Matte чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Matte qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte qora — g‘altakda 1 kg"
+ },
+ "pla-matte-black-refill": {
+  "title_ru": "Bambu Lab PLA Matte чёрный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte чёрный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Matte qora, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte qora — refill 1 kg, g‘altaksiz"
+ },
+ "pla-matte-navy-spool": {
+  "title_ru": "Bambu Lab PLA Matte тёмно-синий, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte тёмно-синий — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Matte to‘q ko‘k, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte to‘q ko‘k — g‘altakda 1 kg"
+ },
+ "pla-matte-navy-refill": {
+  "title_ru": "PLA Matte тёмно-синий, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte тёмно-синий — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "PLA Matte to‘q ko‘k, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte to‘q ko‘k — refill 1 kg, g‘altaksiz"
+ },
+ "pla-matte-green-spool": {
+  "title_ru": "Bambu Lab PLA Matte зелёный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte зелёный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA Matte yashil, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte yashil — g‘altakda 1 kg"
+ },
+ "pla-matte-green-refill": {
+  "title_ru": "Bambu Lab PLA Matte зелёный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Matte зелёный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PLA Matte yashil, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Matte yashil — refill 1 kg, g‘altaksiz"
+ },
+ "petg-hf-orange": {
+  "title_ru": "Bambu Lab PETG HF оранжевый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF оранжевый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PETG HF to‘q sariq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF to‘q sariq — g‘altakda 1 kg"
+ },
+ "petg-hf-white": {
+  "title_ru": "Bambu Lab PETG HF белый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF белый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PETG HF oq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF oq — g‘altakda 1 kg"
+ },
+ "petg-hf-white-refill": {
+  "title_ru": "Bambu Lab PETG HF белый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF белый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PETG HF oq, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF oq — refill 1 kg, g‘altaksiz"
+ },
+ "petg-hf-black-spool": {
+  "title_ru": "Bambu Lab PETG HF чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PETG HF qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF qora — g‘altakda 1 kg"
+ },
+ "petg-hf-black-refill": {
+  "title_ru": "Bambu Lab PETG HF чёрный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF чёрный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PETG HF qora, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF qora — refill 1 kg, g‘altaksiz"
+ },
+ "petg-hf-gray-spool": {
+  "title_ru": "Bambu Lab PETG HF серый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF серый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PETG HF kulrang, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF kulrang — g‘altakda 1 kg"
+ },
+ "petg-hf-gray-refill": {
+  "title_ru": "Bambu Lab PETG HF серый, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF серый — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PETG HF kulrang, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF kulrang — refill 1 kg, g‘altaksiz"
+ },
+ "petg-hf-transparent-spool": {
+  "title_ru": "Bambu Lab PETG HF прозрачный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF прозрачный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PETG HF shaffof, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF shaffof — g‘altakda 1 kg"
+ },
+ "petg-hf-transparent-refill": {
+  "title_ru": "Bambu Lab PETG HF прозрачный, рефилл без катушки | Forma 3D",
+  "h1_ru": "Bambu Lab PETG HF прозрачный — рефилл 1 кг без катушки",
+  "kind": "refill",
+  "title_uz": "Bambu Lab PETG HF shaffof, refill (g‘altaksiz) | Forma 3D",
+  "h1_uz": "Bambu Lab PETG HF shaffof — refill 1 kg, g‘altaksiz"
+ },
+ "abs-black-spool": {
+  "title_ru": "Bambu Lab ABS чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab ABS чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab ABS qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab ABS qora — g‘altakda 1 kg"
+ },
+ "abs-white-spool": {
+  "title_ru": "Bambu Lab ABS белый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab ABS белый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab ABS oq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab ABS oq — g‘altakda 1 kg"
+ },
+ "asa-black-spool": {
+  "title_ru": "Bambu Lab ASA чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab ASA чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab ASA qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab ASA qora — g‘altakda 1 kg"
+ },
+ "asa-white-spool": {
+  "title_ru": "Bambu Lab ASA белый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab ASA белый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab ASA oq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab ASA oq — g‘altakda 1 kg"
+ },
+ "tpu-95a-hf-black-spool": {
+  "title_ru": "Bambu Lab TPU 95A HF чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab TPU 95A HF чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab TPU 95A HF qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab TPU 95A HF qora — g‘altakda 1 kg"
+ },
+ "tpu-95a-hf-white-spool": {
+  "title_ru": "Bambu Lab TPU 95A HF белый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab TPU 95A HF белый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab TPU 95A HF oq, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab TPU 95A HF oq — g‘altakda 1 kg"
+ },
+ "pla-cf-black-spool": {
+  "title_ru": "Bambu Lab PLA-CF чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA-CF чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PLA-CF qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA-CF qora — g‘altakda 1 kg"
+ },
+ "pla-silk-choice-spool": {
+  "title_ru": "Bambu Lab PLA Silk, цвет на выбор, 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Silk — цвет на выбор, 1 кг на катушке",
+  "kind": "choice",
+  "title_uz": "Bambu Lab PLA Silk, rang tanlanadi, 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Silk — rang tanlanadi, g‘altakda 1 kg"
+ },
+ "support-for-pla-request-spool": {
+  "title_ru": "Bambu Lab Support for PLA под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab Support for PLA — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Support for PLA buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab Support for PLA — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pla-marble-request-spool": {
+  "title_ru": "Bambu Lab PLA Marble под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Marble — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PLA Marble buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Marble — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pla-metal-request-spool": {
+  "title_ru": "Bambu Lab PLA Metal под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Metal — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PLA Metal buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Metal — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pla-galaxy-request-spool": {
+  "title_ru": "Bambu Lab PLA Galaxy под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Galaxy — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PLA Galaxy buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Galaxy — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pla-sparkle-request-spool": {
+  "title_ru": "Bambu Lab PLA Sparkle под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Sparkle — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PLA Sparkle buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Sparkle — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pla-glow-request-spool": {
+  "title_ru": "Bambu Lab PLA Glow под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Glow — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PLA Glow buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Glow — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pla-wood-request-spool": {
+  "title_ru": "Bambu Lab PLA Wood под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PLA Wood — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PLA Wood buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PLA Wood — buyurtmaga, g‘altakda 1 kg"
+ },
+ "petg-cf-request-spool": {
+  "title_ru": "Bambu Lab PETG-CF под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG-CF — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PETG-CF buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG-CF — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pet-cf-request-spool": {
+  "title_ru": "Bambu Lab PET-CF под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PET-CF — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PET-CF buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PET-CF — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pc-request-spool": {
+  "title_ru": "Bambu Lab PC под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PC (поликарбонат) — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PC buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PC (polikarbonat) — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pa6-cf-request-spool": {
+  "title_ru": "Bambu Lab PA6-CF под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PA6-CF — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "Bambu Lab PA6-CF buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PA6-CF — buyurtmaga, g‘altakda 1 kg"
+ },
+ "pva-support-w-request-spool": {
+  "title_ru": "Bambu Lab PVA / Support W под заказ, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PVA / Support W — под заказ, 1 кг на катушке",
+  "kind": "request",
+  "title_uz": "PVA / Support W buyurtmaga, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PVA / Support W — buyurtmaga, g‘altakda 1 kg"
+ },
+ "textured-plate": {
+  "title_ru": "Textured PEI Plate 256 мм для Bambu Lab A1/P1/X1 | Forma 3D",
+  "h1_ru": "Печатный стол Bambu Lab Textured PEI Plate 256 мм",
+  "kind": "part",
+  "title_uz": "Textured PEI Plate 256 mm, Bambu Lab A1/P1/X1 | Forma 3D",
+  "h1_uz": "Bambu Lab Textured PEI Plate 256 mm bosma stoli"
+ },
+ "textured-plate-180": {
+  "title_ru": "Textured PEI Plate 180 мм для Bambu Lab A1 mini | Forma 3D",
+  "h1_ru": "Печатный стол Bambu Lab Textured PEI Plate 180 мм для A1 mini",
+  "kind": "part",
+  "title_uz": "Textured PEI Plate 180 mm, Bambu Lab A1 mini | Forma 3D",
+  "h1_uz": "Bambu Lab A1 mini uchun Textured PEI Plate 180 mm bosma stoli"
+ },
+ "smooth-pei-plate": {
+  "title_ru": "Smooth PEI Plate для Bambu Lab A1/P1/X1 | Forma 3D",
+  "h1_ru": "Печатный стол Bambu Lab Smooth PEI Plate",
+  "kind": "part",
+  "title_uz": "Smooth PEI Plate, Bambu Lab A1/P1/X1 | Forma 3D",
+  "h1_uz": "Bambu Lab Smooth PEI Plate bosma stoli"
+ },
+ "cool-plate-supertack": {
+  "title_ru": "Cool Plate SuperTack для Bambu Lab A1/P1/X1 | Forma 3D",
+  "h1_ru": "Печатный стол Bambu Lab Cool Plate SuperTack",
+  "kind": "part",
+  "title_uz": "Cool Plate SuperTack, Bambu Lab A1/P1/X1 | Forma 3D",
+  "h1_uz": "Bambu Lab Cool Plate SuperTack bosma stoli"
+ },
+ "engineering-plate": {
+  "title_ru": "Engineering Plate Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Печатный стол Bambu Lab Engineering Plate",
+  "kind": "part",
+  "title_uz": "Bambu Lab Engineering Plate — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab Engineering Plate bosma stoli"
+ },
+ "glue-stick": {
+  "title_ru": "Клей-карандаш для стола 3D-принтера Bambu Lab | Forma 3D",
+  "h1_ru": "Клей-карандаш для печатного стола Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bosma stoli uchun yelim Bambu Lab — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab bosma stoli uchun yelim-qalam"
+ },
+ "hotend-a1-02": {
+  "title_ru": "Хотэнд / сопло 0,2 мм для Bambu Lab A1/A1 mini | Forma 3D",
+  "h1_ru": "Хотэнд / сопло 0,2 мм для Bambu Lab A1 / A1 mini",
+  "kind": "part",
+  "title_uz": "Bambu Lab A1/A1 mini hotend / soplo 0.2 mm | Forma 3D",
+  "h1_uz": "Bambu Lab A1 / A1 mini uchun hotend / soplo 0.2 mm"
+ },
+ "hotend-a1-04-steel": {
+  "title_ru": "Хотэнд 0,4 мм (сталь) для Bambu Lab A1/A1 mini | Forma 3D",
+  "h1_ru": "Хотэнд для Bambu Lab A1 / A1 mini, сопло 0,4 мм (сталь)",
+  "kind": "part",
+  "title_uz": "Bambu Lab A1/A1 mini hotend 0.4 mm (po‘lat) | Forma 3D",
+  "h1_uz": "Bambu Lab A1 / A1 mini uchun hotend, soplo 0.4 mm (po‘lat)"
+ },
+ "hotend-a1-04-hardened": {
+  "title_ru": "Хотэнд закалённый 0,4 мм для Bambu Lab A1/A1 mini | Forma 3D",
+  "h1_ru": "Закалённый хотэнд 0,4 мм для Bambu Lab A1 / A1 mini",
+  "kind": "part",
+  "title_uz": "Bambu Lab A1/A1 mini toblangan hotend 0.4 mm | Forma 3D",
+  "h1_uz": "Bambu Lab A1 / A1 mini uchun toblangan hotend 0.4 mm"
+ },
+ "hotend-a1-06": {
+  "title_ru": "Хотэнд / сопло 0,6 мм для Bambu Lab A1/A1 mini | Forma 3D",
+  "h1_ru": "Хотэнд / сопло 0,6 мм для Bambu Lab A1 / A1 mini",
+  "kind": "part",
+  "title_uz": "Bambu Lab A1/A1 mini hotend / soplo 0.6 mm | Forma 3D",
+  "h1_uz": "Bambu Lab A1 / A1 mini uchun hotend / soplo 0.6 mm"
+ },
+ "hotend-p1-02": {
+  "title_ru": "Хотэнд / сопло 0,2 мм для Bambu Lab P1P/P1S | Forma 3D",
+  "h1_ru": "Хотэнд / сопло 0,2 мм для Bambu Lab P1P / P1S",
+  "kind": "part",
+  "title_uz": "Bambu Lab P1P/P1S hotend / soplo 0.2 mm | Forma 3D",
+  "h1_uz": "Bambu Lab P1P / P1S uchun hotend / soplo 0.2 mm"
+ },
+ "hotend-p1-04": {
+  "title_ru": "Хотэнд в сборе 0,4 мм для Bambu Lab P1P/P1S | Forma 3D",
+  "h1_ru": "Хотэнд в сборе 0,4 мм для Bambu Lab P1P / P1S",
+  "kind": "part",
+  "title_uz": "Bambu Lab P1P/P1S hotend yig‘masi 0.4 mm | Forma 3D",
+  "h1_uz": "Bambu Lab P1P / P1S uchun hotend yig‘masi 0.4 mm"
+ },
+ "hotend-p1-04-hardened": {
+  "title_ru": "Хотэнд закалённый 0,4 мм для Bambu Lab P1P/P1S | Forma 3D",
+  "h1_ru": "Закалённый хотэнд 0,4 мм для Bambu Lab P1P / P1S",
+  "kind": "part",
+  "title_uz": "Bambu Lab P1P/P1S toblangan hotend 0.4 mm | Forma 3D",
+  "h1_uz": "Bambu Lab P1P / P1S uchun toblangan hotend 0.4 mm"
+ },
+ "hotend-p1-06": {
+  "title_ru": "Хотэнд / сопло 0,6 мм для Bambu Lab P1P/P1S | Forma 3D",
+  "h1_ru": "Хотэнд / сопло 0,6 мм для Bambu Lab P1P / P1S",
+  "kind": "part",
+  "title_uz": "Bambu Lab P1P/P1S hotend / soplo 0.6 mm | Forma 3D",
+  "h1_uz": "Bambu Lab P1P / P1S uchun hotend / soplo 0.6 mm"
+ },
+ "hotend-x1c": {
+  "title_ru": "Хотэнд / сопло 0,2 мм для Bambu Lab X1/X1C | Forma 3D",
+  "h1_ru": "Хотэнд / сопло 0,2 мм для Bambu Lab X1 / X1C",
+  "kind": "part",
+  "title_uz": "Bambu Lab X1/X1C hotend / soplo 0.2 mm | Forma 3D",
+  "h1_uz": "Bambu Lab X1 / X1C uchun hotend / soplo 0.2 mm"
+ },
+ "hotend-x1-04": {
+  "title_ru": "Хотэнд в сборе 0,4 мм для Bambu Lab X1/X1C | Forma 3D",
+  "h1_ru": "Хотэнд в сборе 0,4 мм для Bambu Lab X1 / X1C",
+  "kind": "part",
+  "title_uz": "Bambu Lab X1/X1C hotend yig‘masi 0.4 mm | Forma 3D",
+  "h1_uz": "Bambu Lab X1 / X1C uchun hotend yig‘masi 0.4 mm"
+ },
+ "hotend-x1-04-hardened": {
+  "title_ru": "Хотэнд закалённый 0,4 мм для Bambu Lab X1/X1C | Forma 3D",
+  "h1_ru": "Закалённый хотэнд 0,4 мм для Bambu Lab X1 / X1C",
+  "kind": "part",
+  "title_uz": "Bambu Lab X1/X1C toblangan hotend 0.4 mm | Forma 3D",
+  "h1_uz": "Bambu Lab X1 / X1C uchun toblangan hotend 0.4 mm"
+ },
+ "hotend-x1-06": {
+  "title_ru": "Хотэнд / сопло 0,6 мм для Bambu Lab X1/X1C | Forma 3D",
+  "h1_ru": "Хотэнд / сопло 0,6 мм для Bambu Lab X1 / X1C",
+  "kind": "part",
+  "title_uz": "Bambu Lab X1/X1C hotend / soplo 0.6 mm | Forma 3D",
+  "h1_uz": "Bambu Lab X1 / X1C uchun hotend / soplo 0.6 mm"
+ },
+ "hotend-silicone-sock": {
+  "title_ru": "Силиконовый чехол на хотэнд Bambu Lab | Forma 3D",
+  "h1_ru": "Силиконовый чехол на хотэнд Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab hotend uchun silikon qoplama | Forma 3D",
+  "h1_uz": "Bambu Lab hotend uchun silikon qoplama"
+ },
+ "ams-lite": {
+  "title_ru": "Bambu Lab AMS Lite для A1/A1 mini в Ташкенте | Forma 3D",
+  "h1_ru": "Система AMS Lite для Bambu Lab A1 / A1 mini",
+  "kind": "part",
+  "title_uz": "Bambu Lab AMS Lite A1/A1 mini uchun — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab A1 / A1 mini uchun AMS Lite tizimi"
+ },
+ "ams-2-pro": {
+  "title_ru": "Bambu Lab AMS 2 Pro — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Система подачи филамента Bambu Lab AMS 2 Pro",
+  "kind": "part",
+  "title_uz": "Bambu Lab AMS 2 Pro — Toshkentda sotib olish | Forma 3D",
+  "h1_uz": "Bambu Lab AMS 2 Pro filament uzatish tizimi"
+ },
+ "ams-ht": {
+  "title_ru": "Bambu Lab AMS HT — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Система подачи филамента Bambu Lab AMS HT",
+  "kind": "part",
+  "title_uz": "Bambu Lab AMS HT — Toshkentda sotib olish | Forma 3D",
+  "h1_uz": "Bambu Lab AMS HT filament uzatish tizimi"
+ },
+ "ams-buffer": {
+  "title_ru": "Буфер AMS для Bambu Lab P1P/P1S/X1/X1C/X1E | Forma 3D",
+  "h1_ru": "Буфер AMS для Bambu Lab P1P / P1S / X1 / X1C / X1E",
+  "kind": "part",
+  "title_uz": "Bambu Lab P1P/P1S/X1/X1C/X1E uchun AMS buferi | Forma 3D",
+  "h1_uz": "Bambu Lab P1P / P1S / X1 / X1C / X1E uchun AMS buferi"
+ },
+ "ams-hub": {
+  "title_ru": "Хабы AMS / AMS Lite Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Хабы AMS / AMS Lite для Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab AMS / AMS Lite hublari — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab uchun AMS / AMS Lite hublari"
+ },
+ "ams-feeding-rollers": {
+  "title_ru": "Подающие ролики AMS Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Подающие ролики AMS для Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab AMS uzatish roliklari — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab uchun AMS uzatish roliklari"
+ },
+ "filament-dryer": {
+  "title_ru": "Сушилка для филамента на 1–2 катушки в Ташкенте | Forma 3D",
+  "h1_ru": "Сушилка для филамента на 1–2 катушки",
+  "kind": "part",
+  "title_uz": "Filament quritgich 1–2 g‘altak uchun — Toshkentda | Forma 3D",
+  "h1_uz": "1–2 g‘altak uchun filament quritgich"
+ },
+ "desiccant": {
+  "title_ru": "Влагопоглотитель (силикагель) для филамента | Forma 3D",
+  "h1_ru": "Влагопоглотитель (силикагель) для хранения филамента",
+  "kind": "part",
+  "title_uz": "Filament uchun namlik yutgich (silikagel) | Forma 3D",
+  "h1_uz": "Filament saqlash uchun namlik yutgich (silikagel)"
+ },
+ "vacuum-storage-bags": {
+  "title_ru": "Вакуумные пакеты для катушек филамента в Ташкенте | Forma 3D",
+  "h1_ru": "Вакуумные пакеты для хранения катушек филамента",
+  "kind": "part",
+  "title_uz": "Filament g‘altaklari uchun vakuum paketlar | Forma 3D",
+  "h1_uz": "Filament g‘altaklarini saqlash uchun vakuum paketlar"
+ },
+ "reusable-spool": {
+  "title_ru": "Многоразовая катушка Bambu Lab для рефиллов | Forma 3D",
+  "h1_ru": "Многоразовая катушка Bambu Lab для рефиллов",
+  "kind": "part",
+  "title_uz": "Bambu Lab qayta ishlatiladigan g‘altak (refill) | Forma 3D",
+  "h1_uz": "Refill uchun qayta ishlatiladigan Bambu Lab g‘altagi"
+ },
+ "ptfe-tubes": {
+  "title_ru": "Тефлоновые трубки PTFE для Bambu Lab в Ташкенте | Forma 3D",
+  "h1_ru": "Тефлоновые трубки (PTFE) для Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun teflon naychalar (PTFE) | Forma 3D",
+  "h1_uz": "Bambu Lab uchun teflon naychalar (PTFE)"
+ },
+ "repair-thermistors": {
+  "title_ru": "Термисторы для Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Термисторы для 3D-принтеров Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun termistorlar — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab 3D-printerlari uchun termistorlar"
+ },
+ "repair-extruders": {
+  "title_ru": "Экструдеры для Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Экструдеры для 3D-принтеров Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun ekstruderlar — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab 3D-printerlari uchun ekstruderlar"
+ },
+ "repair-belts": {
+  "title_ru": "Ремни для Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Ремни для 3D-принтеров Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun kamarlar — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab 3D-printerlari uchun kamarlar"
+ },
+ "repair-motors": {
+  "title_ru": "Моторы для Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Моторы для 3D-принтеров Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun motorlar — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab 3D-printerlari uchun motorlar"
+ },
+ "repair-fans": {
+  "title_ru": "Вентиляторы для Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Вентиляторы для 3D-принтеров Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun ventilyatorlar — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab 3D-printerlari uchun ventilyatorlar"
+ },
+ "repair-cables": {
+  "title_ru": "Кабели для Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Кабели для 3D-принтеров Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun kabellar — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab 3D-printerlari uchun kabellar"
+ },
+ "repair-boards": {
+  "title_ru": "Платы для Bambu Lab — купить в Ташкенте | Forma 3D",
+  "h1_ru": "Платы для 3D-принтеров Bambu Lab",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun platalar — Toshkentda | Forma 3D",
+  "h1_uz": "Bambu Lab 3D-printerlari uchun platalar"
+ },
+ "maintenance-kit-a1": {
+  "title_ru": "Набор обслуживания для Bambu Lab A1 в Ташкенте | Forma 3D",
+  "h1_ru": "Набор Forma 3D для обслуживания Bambu Lab A1",
+  "kind": "part",
+  "title_uz": "Bambu Lab A1 uchun xizmat ko‘rsatish to‘plami | Forma 3D",
+  "h1_uz": "Bambu Lab A1 uchun Forma 3D xizmat ko‘rsatish to‘plami"
+ },
+ "maintenance-kit-p1s": {
+  "title_ru": "Набор обслуживания для Bambu Lab P1S в Ташкенте | Forma 3D",
+  "h1_ru": "Набор Forma 3D для обслуживания Bambu Lab P1S",
+  "kind": "part",
+  "title_uz": "Bambu Lab P1S uchun xizmat ko‘rsatish to‘plami | Forma 3D",
+  "h1_uz": "Bambu Lab P1S uchun Forma 3D xizmat ko‘rsatish to‘plami"
+ },
+ "lubrication-kit": {
+  "title_ru": "Смазка для Bambu Lab: масло + густая смазка | Forma 3D",
+  "h1_ru": "Набор смазки для 3D-принтера Bambu Lab: масло + густая смазка",
+  "kind": "part",
+  "title_uz": "Bambu Lab uchun moy va quyuq moylash materiali | Forma 3D",
+  "h1_uz": "Bambu Lab uchun moy va quyuq moylash materiali"
+ },
+ "nozzle-cleaning-kit": {
+  "title_ru": "Иглы и щётки для чистки сопла 3D-принтера | Forma 3D",
+  "h1_ru": "Иглы и щётки для чистки сопла 3D-принтера",
+  "kind": "part",
+  "title_uz": "Soplo tozalash ignalari va cho‘tkalari | Forma 3D",
+  "h1_uz": "3D-printer soplosini tozalash ignalari va cho‘tkalari"
+ },
+ "carbon-filter": {
+  "title_ru": "Угольный фильтр для Bambu Lab P1S/X1C в Ташкенте | Forma 3D",
+  "h1_ru": "Угольный фильтр для Bambu Lab P1S / X1C",
+  "kind": "part",
+  "title_uz": "Bambu Lab P1S/X1C uchun ko‘mirli filtr | Forma 3D",
+  "h1_uz": "Bambu Lab P1S / X1C uchun ko‘mirli filtr"
+ },
+ "filament-cutter": {
+  "title_ru": "Нож для обрезки филамента Bambu Lab A1/P1/X1 | Forma 3D",
+  "h1_ru": "Нож для обрезки филамента для Bambu Lab A1, P1 и X1",
+  "kind": "part",
+  "title_uz": "Bambu Lab A1/P1/X1 filament kesish pichog‘i | Forma 3D",
+  "h1_uz": "Bambu Lab A1, P1 va X1 uchun filament kesish pichog‘i"
+ },
+ "paht-cf-black-spool": {
+  "title_ru": "Bambu Lab PAHT-CF чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PAHT-CF чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PAHT-CF qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PAHT-CF qora — g‘altakda 1 kg"
+ },
+ "petg-basic-black-spool": {
+  "title_ru": "Bambu Lab PETG Basic чёрный, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG Basic чёрный — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PETG Basic qora, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG Basic qora — g‘altakda 1 kg"
+ },
+ "petg-basic-gray-spool": {
+  "title_ru": "Bambu Lab PETG Basic серый, катушка 1 кг | Forma 3D",
+  "h1_ru": "Bambu Lab PETG Basic серый — 1 кг на катушке",
+  "kind": "spool",
+  "title_uz": "Bambu Lab PETG Basic kulrang, g‘altakda 1 kg | Forma 3D",
+  "h1_uz": "Bambu Lab PETG Basic kulrang — g‘altakda 1 kg"
+ },
+ "hotend-h2-04-hardened": {
+  "title_ru": "Закалённый хотэнд 0,4 мм для P2S, H2D, H2S | Forma 3D",
+  "h1_ru": "Закалённый хотэнд 0,4 мм для Bambu Lab P2S / H2S / H2D / H2C / X2D",
+  "kind": "part",
+  "title_uz": "P2S, H2D, H2S uchun toblangan hotend 0.4 mm | Forma 3D",
+  "h1_uz": "Bambu Lab P2S / H2S / H2D / H2C / X2D uchun toblangan hotend 0.4 mm"
+ },
+ "hotend-h2-06-hardened": {
+  "title_ru": "Закалённый хотэнд 0,6 мм для P2S, H2D, H2S | Forma 3D",
+  "h1_ru": "Закалённый хотэнд 0,6 мм для Bambu Lab P2S / H2S / H2D / H2C / X2D",
+  "kind": "part",
+  "title_uz": "P2S, H2D, H2S uchun toblangan hotend 0.6 mm | Forma 3D",
+  "h1_uz": "Bambu Lab P2S / H2S / H2D / H2C / X2D uchun toblangan hotend 0.6 mm"
+ }
+}
