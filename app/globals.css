@@ -88,30 +88,8 @@
 .product-link-block ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px 24px;font-size:15px}
 @media (max-width:760px){.b2b-hero .b2b-title{font-size:42px;margin-top:20px}.hero .hero-title{font-size:48px;margin:17px 0 12px}.hero .hero-h1{font-size:16px}}
 
-/* Печать на заказ */
-.print-service{margin-top:65px;border-radius:9px;background:#252a23;color:white;padding:43px 42px}
-.print-service-head{display:grid;grid-template-columns:1.2fr 1fr;gap:45px;align-items:end}
-.print-service .eyebrow{font-size:10px;color:var(--lime);letter-spacing:2px;margin-bottom:18px}
-.print-service h2{font-size:35px;font-weight:500;line-height:1.15;max-width:560px}
-.print-service-head p{font-size:14px;color:#b2bbaa;line-height:1.7;max-width:420px}
-.print-service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
-.print-service-card{background:#30362d;border-radius:8px;padding:24px}
-.print-service-card svg{color:var(--lime)}
-.print-service-card h3{font-size:18px;font-weight:600;letter-spacing:-.01em;margin-top:16px}
-.print-service-card p{font-size:13px;color:#b2bbaa;line-height:1.7;margin-top:8px}
-.print-service-steps{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;border-top:1px solid #3c4338;padding-top:22px}
-.print-service-steps li{font-size:13px;color:#dfe5d8;display:flex;gap:10px;align-items:baseline}
-.print-service-steps span{font-size:11px;color:var(--lime);font-weight:600;letter-spacing:1px}
-.print-service-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.print-service-cta .button{margin:0}
-.outline-light{border:1px solid #59614f;color:white;background:transparent}
-.outline-light:hover{background:#30362d}
-@media(max-width:900px){.print-service-head{grid-template-columns:1fr;gap:16px}.print-service-grid{grid-template-columns:1fr}.print-service-steps{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.print-service{padding:30px 22px}.print-service h2{font-size:27px}.print-service-steps{grid-template-columns:1fr}.print-service-cta .button{width:100%}}
-
 /* Цвета товара не вылезают за экран на телефоне */
 .color-tiles{flex-wrap:wrap}
-.page-wrap .print-service{margin:56px 0;width:100%}
 
 /* Баннер с хотэндом */
 .hero-actions .button.outline{gap:12px}
@@ -119,3 +97,13 @@
 .hero-visual-hotend .hero-product>div>span{letter-spacing:1px}
 @media(max-width:1150px){.hero-visual-hotend>img{height:230px;width:150px;left:60%;top:70px}}
 @media(max-width:640px){.hero-actions{flex-wrap:wrap}.hero-actions .button{flex:1 1 auto}.hero-visual-hotend>img{height:175px;width:120px;left:60%;top:28px;transform:rotate(14deg)}}
+
+/* Изделия наших клиентов */
+.client-works .section-heading{align-items:flex-end}
+.client-works-note{font-size:14px;color:#757a6e;max-width:440px;line-height:1.7}
+.client-works-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.client-works-grid li{border:1px solid var(--border);border-radius:8px;overflow:hidden;background:white}
+.client-works-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.client-works-grid span{display:block;font-size:13px;line-height:1.5;padding:12px 14px 14px;color:var(--ink)}
+@media(max-width:900px){.client-works-grid{grid-template-columns:repeat(2,1fr)}.client-works .section-heading{flex-direction:column;align-items:flex-start}}
+@media(max-width:640px){.client-works-grid{gap:10px}.client-works-grid span{font-size:12px;padding:9px 10px 11px}}
