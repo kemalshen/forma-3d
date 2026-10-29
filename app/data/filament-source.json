@@ -200,6 +200,26 @@
     "price": null
   },
   {
+    "sourceRow": 49,
+    "sourceId": 44,
+    "material": "PETG Basic",
+    "color": "Чёрный",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
+    "sourceRow": 50,
+    "sourceId": 45,
+    "material": "PETG Basic",
+    "color": "Серый",
+    "format": "Катушка",
+    "plannedLocation": "Склад",
+    "note": null,
+    "price": null
+  },
+  {
     "sourceRow": 26,
     "sourceId": 21,
     "material": "Support for PLA",
@@ -393,7 +413,7 @@
     "sourceRow": 45,
     "sourceId": 40,
     "material": "PAHT-CF",
-    "color": "По запросу",
+    "color": "Чёрный",
     "format": "Катушка",
     "plannedLocation": "Под заказ",
     "note": null,

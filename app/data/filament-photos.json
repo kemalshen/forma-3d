@@ -257,5 +257,26 @@
     "sourcePage": "https://eu.store.bambulab.com/products/pet-cf",
     "kind": "family",
     "manufacturerVariant": "Filament with spool / 0.5 kg / Black (71100)"
+  },
+  "PETG Basic|black": {
+    "file": "filaments/petg-hf-black.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG_HF_6.jpg?v=1721201479",
+    "sourcePage": "https://eu.store.bambulab.com/products/petg-hf",
+    "kind": "color",
+    "manufacturerVariant": "PETG HF Black (фото похожей катушки)"
+  },
+  "PETG Basic|gray": {
+    "file": "filaments/petg-hf-gray.jpg",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PETG_HF_1.jpg?v=1721201479",
+    "sourcePage": "https://eu.store.bambulab.com/products/petg-hf",
+    "kind": "color",
+    "manufacturerVariant": "PETG HF Gray (фото похожей катушки)"
+  },
+  "PAHT-CF|black": {
+    "file": "filaments/paht-cf-request.png",
+    "source": "https://cdn.shopify.com/s/files/1/0645/5876/0155/files/PAHTCFORIGINAL.png?v=1684592088",
+    "sourcePage": "https://eu.store.bambulab.com/products/paht-cf",
+    "kind": "family",
+    "manufacturerVariant": "Filament with spool / 0.5 kg / Black (70100)"
   }
 }

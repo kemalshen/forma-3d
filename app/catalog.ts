@@ -2,6 +2,8 @@ import sourceRows from './data/filament-source.json';
 import {createParts,PART_CATEGORIES,ACCESSORY_SYSTEMS,partCategoryUz} from './parts';
 export {PART_CATEGORIES,ACCESSORY_SYSTEMS,partCategoryUz};
 import photoData from './data/filament-photos.json';
+import {STOCK,ORDER_LEAD_TIME} from './stock';
+export {ORDER_LEAD_TIME};
 const photos:Record<string,{file:string;kind:string;manufacturerVariant:string;source:string;sourcePage:string}>=photoData;
 
 export const PRINTER_MODELS=['A1 mini','A1','A2L','P1P','P1S','P2S','X1','X1C','X1E','X2D','H2S','H2D','H2D Pro','H2C'];
@@ -44,9 +46,9 @@ for(const row of sourceRows){
    hex:old?.hex||color?.[2]||'#e1e6dc',price:typeof row.price==='number'?row.price:old?.price??null,stock:old?.stock??null,
    image:old?.image||photo?.file||(colorKey==='green'&&row.material==='PLA Basic'&&format==='refill'?'green-sample.webp':familyImage),
    photoKind:old?.image?'color':photo?.kind,old:old?.old,tag:old?.tag,type:'filament',weight:old?.weight||'',format,
-   models:['PLA Basic','PLA Matte','PETG HF'].includes(row.material)?PRINTER_MODELS:[],
+   models:['PLA Basic','PLA Matte','PETG HF','PETG Basic'].includes(row.material)?PRINTER_MODELS:[],
    sourceRows:[row.sourceRow],availability:row.plannedLocation==='Под заказ'?'order':'unknown',
-   compatibilityPending:!['PLA Basic','PLA Matte','PETG HF'].includes(row.material),
+   compatibilityPending:!['PLA Basic','PLA Matte','PETG HF','PETG Basic'].includes(row.material),
    selectionNote:uncertainColor||colorKey==='transparent'||row.material==='PVA / Support W',
   };
   imported.set(key,p);
@@ -54,7 +56,15 @@ for(const row of sourceRows){
 }
 // Preserve prototype URLs, demonstrations and the parts catalog.
 const filamentProducts=baseProducts.filter(p=>p.type==='filament').map(p=>imported.get(identity(p))||p).concat([...imported.values()].filter(p=>!existing.has(identity(p))));
-export const products:Product[]=[...filamentProducts,...createParts(baseProducts.filter(p=>p.type==='parts'),PRINTER_MODELS)];
+// Наличие и цены склада берутся только из app/stock.ts; всё остальное — под заказ.
+const applyStock=(p:Product):Product=>{
+ const s=STOCK[p.id];
+ if(s&&s.qty>0)return {...p,stock:s.qty,price:s.price,old:undefined,availability:undefined,leadTime:null,weight:p.type==='filament'?(p.weight||'1'):p.weight};
+ return {...p,stock:0,old:undefined,leadTime:null,tag:p.tag==='hit'?undefined:p.tag};
+};
+const allProducts=[...filamentProducts,...createParts(baseProducts.filter(p=>p.type==='parts'),PRINTER_MODELS)].map(applyStock);
+export const products:Product[]=[...allProducts.filter(p=>(p.stock??0)>0),...allProducts.filter(p=>!((p.stock??0)>0))];
+export const inStockNow=(p:Product)=>(p.stock??0)>0;
 export const materials=['Все',...new Set(sourceRows.map(r=>r.material))];
 export function matchesMaterial(p:Product,m:string){
  if(m==='Все')return true;
