@@ -16,7 +16,7 @@ export const STOCK: Record<string, {qty: number; price: number | null}> = {
   'petg-basic-black-spool': {qty: 30, price: 149000}, // JD ¥35 → себест. ~107 000
   'petg-basic-gray-spool': {qty: 10, price: 149000}, // JD ¥35 → себест. ~107 000
   'asa-black-spool': {qty: 50, price: 219000}, // JD ¥68 → себест. ~163 000
-  'paht-cf-black-spool': {qty: 5, price: null}, // впишите цену: (цена JD ¥ × 1 690 + 48 000) × 1.35
+  'paht-cf-black-spool': {qty: 5, price: 1290000}, // JD ¥538 +10% → себест. ~1 050 000
   'hotend-h2-04-hardened': {qty: 4, price: 249000}, // JD ¥90 → себест. ~164 000
   'hotend-h2-06-hardened': {qty: 4, price: 249000}, // JD ¥90 → себест. ~164 000
 };
