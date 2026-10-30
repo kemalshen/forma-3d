@@ -67,7 +67,7 @@
 .b2b-hero .b2b-title{font-size:59px;margin-top:26px;font-weight:500;line-height:1.05}
 .b2b-hero .b2b-h1{font-size:20px;line-height:1.35;font-weight:600;margin-top:18px;color:#fff}
 .b2b-links{margin:28px 0 0;font-size:15px;line-height:1.8;color:#5f6a55}
-.b2b-links a,.catalog-intro a,.clients-note a,.pickup-link a,.contact-card p a,.product-link-block a,.format-pair-link,.refill-note a{border-bottom:1px solid #b3c59d;color:#4d6831}
+.b2b-links a,.catalog-intro a,.info-faq a,.guide-teaser a,.clients-note a,.pickup-link a,.contact-card p a,.product-link-block a,.format-pair-link,.refill-note a{border-bottom:1px solid #b3c59d;color:#4d6831}
 .catalog-intro{font-size:14px;line-height:1.7;color:#6f7766;max-width:760px;margin-top:12px}
 .clients-note{margin-top:18px;font-size:14px;color:#6f7766}
 .info-slogan{font-size:15px;color:#7c8572;margin-top:10px}
@@ -107,3 +107,4 @@
 .client-works-grid span{display:block;font-size:13px;line-height:1.5;padding:12px 14px 14px;color:var(--ink)}
 @media(max-width:900px){.client-works-grid{grid-template-columns:repeat(2,1fr)}.client-works .section-heading{flex-direction:column;align-items:flex-start}}
 @media(max-width:640px){.client-works-grid{gap:10px}.client-works-grid span{font-size:12px;padding:9px 10px 11px}}
+.info-faq{margin-top:56px;max-width:850px}.info-faq>h2{font-size:32px;letter-spacing:-1px;margin:0 0 8px}.faq-item{border-top:1px solid #e3e8dc;padding:18px 0}.faq-item h3{font-size:18px;margin:0 0 6px}.faq-item p{margin:0;color:#4f5a46;line-height:1.7}.guide-item{display:flex;flex-direction:column}.guide-teaser{margin:4px 0 0;font-size:14px;line-height:1.6;color:#4f5a46}.knowledge-intro{max-width:850px}
