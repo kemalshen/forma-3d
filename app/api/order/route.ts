@@ -61,7 +61,7 @@ function buildOrder(body: Record<string, unknown>, no: string) {
   if (!lines.length) return {error: 'cart'};
 
   const delivery = DELIVERY[str(body.delivery, 20)] ? str(body.delivery, 20) : 'courier';
-  const deliveryPrice = delivery === 'pickup' || subtotal >= 1000000 ? 0 : delivery === 'region' ? 45000 : 25000;
+  const deliveryPrice = delivery === 'pickup' || subtotal >= 1000000 ? 0 : delivery === 'region' ? 50000 : 25000;
   const payment = PAYMENT[str(body.payment, 20)] ?? '—';
   const isCompany = body.customer === 'company';
 
