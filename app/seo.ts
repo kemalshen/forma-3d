@@ -179,6 +179,8 @@ export function productSeo(p: Product, lang: Lang): ProductSeo {
       .replace('доставка по Ташкенту в день заказа или на следующий', `под заказ из Китая за ${ORDER_LEAD_TIME.ru}`)
       .replace('Доставка по Ташкенту в день заказа или на следующий', `Под заказ из Китая за ${ORDER_LEAD_TIME.ru}`)
       .replace('Toshkentda buyurtma kuni yoki ertasiga yetkazamiz', `Xitoydan ${ORDER_LEAD_TIME.uz} ichida buyurtma asosida olib kelamiz`);
+  // Срок «под заказ» длиннее фразы о доставке — снова уложиться в лимит.
+  description = fitDescription(description, [[' Подберём по модели.', ''], [' Modelga qarab tanlaymiz.', '']]);
   return {...base, description, kind: productKind(p), format: formatLabel(p, uz)};
 }
 
