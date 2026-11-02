@@ -2,6 +2,7 @@ import {ORDER_LEAD_TIME} from './stock';
 import type {Metadata} from 'next';
 import {products, productBrand, type Product} from './catalog';
 import productSeoData from './data/product-seo.json';
+import {ARTICLES, findArticle} from './articles';
 import {DEFAULT_CONTACTS, HOURS, PICKUP_POINTS, phoneDigits, type Contacts} from './contacts';
 
 // Public address of the site. Can be overridden with the SITE_URL env var.
@@ -24,6 +25,7 @@ export function isValidPath(path: string[]) {
   if (!(PAGES as readonly string[]).includes(page)) return false;
   if (page === 'product') return path.length === 2 && !!findProduct(sub);
   if (page === 'catalog') return !sub || (sub === 'parts' && !extra);
+  if (page === 'knowledge') return !sub || (!!findArticle(sub) && !extra);
   return path.length <= 1;
 }
 
@@ -322,6 +324,8 @@ export function buildMetadata(lang: Lang, path: string[], catalogPage = 1): Meta
     title = seo.title;
     description = seo.description;
     image = product.image ? `${SITE_URL}/images/${product.image}` : undefined;
+  } else if (path[0] === 'knowledge' && findArticle(path[1])) {
+    ({title, description} = findArticle(path[1])![lang]);
   } else {
     ({title, description} = pageText(lang, path, catalogPage));
   }
@@ -394,8 +398,31 @@ export function breadcrumbTrail(lang: Lang, path: string[], catalogPage = 1): {n
     ];
   }
   if (path[0] === 'catalog') return [home, {name: pageText(lang, path, catalogPage).h1}];
+  const article = path[0] === 'knowledge' ? findArticle(path[1]) : undefined;
+  if (article) return [home, {name: pageText(lang, ['knowledge']).h1, href: `/${lang}/knowledge`}, {name: article[lang].h1}];
   return [];
 }
+
+/** Article JSON-LD for /knowledge/<slug>. */
+export function articleJsonLd(lang: Lang, slug: string) {
+  const a = findArticle(slug);
+  if (!a) return null;
+  const url = `${SITE_URL}/${lang}/knowledge/${a.slug}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: a[lang].h1,
+    description: a[lang].description,
+    inLanguage: lang === 'uz' ? 'uz-Latn' : 'ru',
+    datePublished: a.published,
+    mainEntityOfPage: url,
+    url,
+    author: {'@id': `${SITE_URL}/#organization`, '@type': 'Organization', name: 'Forma 3D'},
+    publisher: {'@id': `${SITE_URL}/#organization`, '@type': 'Organization', name: 'Forma 3D'},
+  };
+}
+
+export const ARTICLE_SLUGS = ARTICLES.map((a) => a.slug);
 
 export function breadcrumbJsonLd(lang: Lang, path: string[], catalogPage = 1) {
   const trail = breadcrumbTrail(lang, path, catalogPage);
