@@ -1,6 +1,6 @@
 import type {MetadataRoute} from 'next';
 import {products} from './catalog';
-import {LANGS, SITEMAP_PAGES, SITE_URL} from './seo';
+import {ARTICLE_SLUGS, LANGS, SITEMAP_PAGES, SITE_URL} from './seo';
 
 export const dynamic = 'force-static';
 
@@ -14,5 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...SITEMAP_PAGES.flatMap((p) => entry(p, p === '' ? 1 : p.startsWith('catalog') ? 0.9 : 0.5)),
     ...products.flatMap((p) => entry(`product/${p.id}`, 0.8)),
+    ...ARTICLE_SLUGS.flatMap((s) => entry(`knowledge/${s}`, 0.6)),
   ];
 }

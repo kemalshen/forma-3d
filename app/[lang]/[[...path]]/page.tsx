@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Store from '../../store';
 import {readContacts} from '../../contacts';
-import {LANGS, breadcrumbJsonLd, buildMetadata, findProduct, isValidPath, organizationJsonLd, productJsonLd, type Lang} from '../../seo';
+import {LANGS, articleJsonLd, breadcrumbJsonLd, buildMetadata, findProduct, isValidPath, organizationJsonLd, productJsonLd, type Lang} from '../../seo';
 
 type Props = {params: Promise<{lang: string; path?: string[]}>; searchParams: Promise<Record<string, string | string[] | undefined>>};
 
@@ -28,6 +28,8 @@ export default async function Page({params, searchParams}: Props) {
   const product = path[0] === 'product' ? findProduct(path[1]) : undefined;
   const blocks: unknown[] = [];
   if (product) blocks.push(productJsonLd(product, l));
+  const article = path[0] === 'knowledge' && path[1] ? articleJsonLd(l, path[1]) : null;
+  if (article) blocks.push(article);
   const crumbs = breadcrumbJsonLd(l, path, catalogPage);
   if (crumbs) blocks.push(crumbs);
   if (path.length === 0) blocks.push(organizationJsonLd(l, 'home', contacts));
