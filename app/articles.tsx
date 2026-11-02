@@ -4,7 +4,7 @@ import React from 'react';
 import articleData from './data/articles.json';
 
 type Lang = 'ru' | 'uz';
-export type Article = {slug: string; published: string} & Record<Lang, {title: string; description: string; h1: string; body: string}>;
+export type Article = {slug: string; published: string; sources: {title: string; url: string}[]} & Record<Lang, {title: string; description: string; h1: string; body: string}>;
 
 export const ARTICLES = articleData as Article[];
 export const findArticle = (slug?: string) => ARTICLES.find((a) => a.slug === slug);
