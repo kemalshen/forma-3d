@@ -3,6 +3,7 @@ import type {Metadata} from 'next';
 import {products, productBrand, type Product} from './catalog';
 import productSeoData from './data/product-seo.json';
 import {ARTICLES, findArticle} from './articles';
+import {MATERIAL_SLUGS, type MaterialSlug} from './material-pages';
 import {DEFAULT_CONTACTS, HOURS, PICKUP_POINTS, phoneDigits, type Contacts} from './contacts';
 
 // Public address of the site. Can be overridden with the SITE_URL env var.
@@ -13,7 +14,7 @@ export type Lang = (typeof LANGS)[number];
 // Pages the store can render. Anything else returns a real 404.
 export const PAGES = ['', 'catalog', 'product', 'cart', 'business', 'account', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'] as const;
 // Indexable pages that go into the sitemap (cart / account are private; ?page=N is not listed).
-export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
+export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/pla', 'catalog/petg', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
 
 export function findProduct(id?: string) {
   return id ? products.find((p) => p.id === id) : undefined;
@@ -24,7 +25,7 @@ export function isValidPath(path: string[]) {
   const [page = '', sub, extra] = path;
   if (!(PAGES as readonly string[]).includes(page)) return false;
   if (page === 'product') return path.length === 2 && !!findProduct(sub);
-  if (page === 'catalog') return !sub || (sub === 'parts' && !extra);
+  if (page === 'catalog') return !sub || ((sub === 'parts' || (MATERIAL_SLUGS as string[]).includes(sub)) && !extra);
   if (page === 'knowledge') return !sub || (!!findArticle(sub) && !extra);
   return path.length <= 1;
 }
@@ -240,6 +241,30 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
       h1: 'Bambu Lab uchun ehtiyot qismlar va sarf materiallari',
     },
   },
+  'catalog/pla': {
+    ru: {
+      title: 'PLA пластик Bambu Lab купить в Ташкенте | Forma 3D',
+      description: 'PLA пластик Bambu Lab 1,75 мм в Ташкенте: PLA Basic и PLA Matte на катушке 1 кг и рефиллом, Silk, Marble, Wood и другие серии. Поможем выбрать цвет.',
+      h1: 'PLA пластик Bambu Lab для 3D-принтера',
+    },
+    uz: {
+      title: 'Bambu Lab PLA plastik sotib olish, Toshkent | Forma 3D',
+      description: 'Toshkentda Bambu Lab PLA plastik 1,75 mm: PLA Basic va PLA Matte g‘altakda 1 kg va refill, Silk, Marble, Wood va boshqa seriyalar. Rangni tanlang!',
+      h1: '3D-printer uchun Bambu Lab PLA plastik',
+    },
+  },
+  'catalog/petg': {
+    ru: {
+      title: 'PETG пластик Bambu Lab купить в Ташкенте | Forma 3D',
+      description: 'PETG пластик Bambu Lab 1,75 мм в Ташкенте: PETG HF на катушке 1 кг и рефиллом, PETG Basic и PETG-CF. Прочнее PLA на удар и нагрев. Поможем с выбором.',
+      h1: 'PETG пластик Bambu Lab для 3D-принтера',
+    },
+    uz: {
+      title: 'Bambu Lab PETG plastik sotib olish, Toshkent | Forma 3D',
+      description: 'Toshkentda Bambu Lab PETG plastik 1,75 mm: PETG HF g‘altakda 1 kg va refill, PETG Basic va PETG-CF. Zarba va issiqlikka PLA dan chidamliroq.',
+      h1: '3D-printer uchun Bambu Lab PETG plastik',
+    },
+  },
   business: {
     ru: {
       title: 'Филамент оптом в Ташкенте для бизнеса и школ | Forma 3D',
@@ -288,7 +313,16 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
 };
 
 // Catalog pages 2+ (brief 2.3–2.6).
+const materialPaginated = (slug: MaterialSlug): Record<Lang, (n: number) => PageText> => {
+  const name = slug === 'pla' ? 'PLA' : 'PETG';
+  return {
+    ru: (n) => ({title: `${name} пластик Bambu Lab — страница ${n} | Forma 3D`, description: `${name} пластик Bambu Lab 1,75 мм, страница ${n}: катушки 1 кг и рефиллы с доставкой по Ташкенту.`, h1: `${name} пластик Bambu Lab для 3D-принтера — страница ${n}`}),
+    uz: (n) => ({title: `Bambu Lab ${name} plastik — ${n}-sahifa | Forma 3D`, description: `Bambu Lab ${name} plastik 1,75 mm, ${n}-sahifa: g‘altakda 1 kg va refill, Toshkent bo‘ylab yetkazib berish.`, h1: `3D-printer uchun Bambu Lab ${name} plastik — ${n}-sahifa`}),
+  };
+};
 const PAGINATED: Record<string, Record<Lang, (n: number) => PageText>> = {
+  'catalog/pla': materialPaginated('pla'),
+  'catalog/petg': materialPaginated('petg'),
   catalog: {
     ru: (n) => ({title: `Филамент Bambu Lab — страница ${n} | Forma 3D`, description: `Каталог филамента Bambu Lab, страница ${n}: PLA, PETG, ABS, ASA, TPU и инженерные пластики с доставкой по Ташкенту.`, h1: `Филамент Bambu Lab для 3D-принтера — страница ${n}`}),
     uz: (n) => ({title: `Bambu Lab filament — ${n}-sahifa | Forma 3D`, description: `Bambu Lab filamenti katalogi, ${n}-sahifa: PLA, PETG, ABS, ASA, TPU va muhandislik plastiklari, Toshkent bo‘ylab yetkazib berish.`, h1: `3D-printer uchun Bambu Lab filamenti — ${n}-sahifa`}),
@@ -299,7 +333,7 @@ const PAGINATED: Record<string, Record<Lang, (n: number) => PageText>> = {
   },
 };
 
-const pageKey = (path: string[]) => (path[0] === 'catalog' && path[1] === 'parts' ? 'catalog/parts' : path[0] || '');
+const pageKey = (path: string[]) => (path[0] === 'catalog' && path[1] ? `catalog/${path[1]}` : path[0] || '');
 
 /** Title / description / H1 of a non-product page. */
 export function pageText(lang: Lang, path: string[], catalogPage = 1): PageText {
@@ -397,6 +431,8 @@ export function breadcrumbTrail(lang: Lang, path: string[], catalogPage = 1): {n
       {name: productSeo(p, lang).h1},
     ];
   }
+  if (path[0] === 'catalog' && path[1] && path[1] !== 'parts')
+    return [home, {name: uz ? 'Katalog' : 'Каталог', href: `/${lang}/catalog`}, {name: pageText(lang, path, catalogPage).h1}];
   if (path[0] === 'catalog') return [home, {name: pageText(lang, path, catalogPage).h1}];
   const article = path[0] === 'knowledge' ? findArticle(path[1]) : undefined;
   if (article) return [home, {name: pageText(lang, ['knowledge']).h1, href: `/${lang}/knowledge`}, {name: article[lang].h1}];
