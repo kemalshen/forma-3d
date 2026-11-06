@@ -76,6 +76,11 @@ export function matchesMaterial(p:Product,m:string){
  return p.material===m;
 }
 export const canOrder=(p:Product)=>p.price!==null&&(p.stock??0)>0;
+// Временная цена «от …» для товаров без цены (решение владельца 2026-11-06), пока не опубликованы реальные цены.
+// Мелкие расходники дешевле этой суммы — для них остаётся «Цена по запросу». В JSON-LD Offer не попадает.
+export const FROM_PRICE=200000;
+const NO_FROM_PRICE=new Set(['glue-stick','ptfe-tubes','desiccant','hotend-silicone-sock','nozzle-cleaning-kit','filament-cutter','vacuum-storage-bags']);
+export const fromPrice=(p:Product):number|null=>p.price===null&&!NO_FROM_PRICE.has(p.id)?FROM_PRICE:null;
 export function colorVariants(p:Product){
  const variants=products.filter(v=>v.name===p.name&&v.format===p.format);
  return [...new Map(variants.map(v=>[v.colorKey,v])).values()];
