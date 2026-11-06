@@ -498,6 +498,7 @@ export function organizationJsonLd(lang: Lang, page: 'home' | 'contacts', contac
     name: 'Forma 3D',
     ...(page === 'home' && !uz ? {alternateName: 'Форма-3D'} : {}),
     url: `${SITE_URL}/${lang}`,
+    logo: {'@type': 'ImageObject', url: `${SITE_URL}/icon-512.png`, width: 512, height: 512},
     ...(page === 'home'
       ? {
           description: uz
@@ -521,5 +522,15 @@ export function organizationJsonLd(lang: Lang, page: 'home' | 'contacts', contac
     currenciesAccepted: 'UZS',
     paymentAccepted: 'Payme, Click, Humo',
   }));
-  return {'@context': 'https://schema.org', '@graph': [org, ...stores]};
+  // WebSite — источник названия сайта в выдаче Google («Forma 3D» вместо «forma-3d.uz»). Только на главных.
+  const website = {
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    name: 'Forma 3D',
+    alternateName: ['Форма-3D', 'Forma3D', 'forma-3d.uz'],
+    url: `${SITE_URL}/`,
+    inLanguage: ['ru', 'uz'],
+    publisher: {'@id': `${SITE_URL}/#organization`},
+  };
+  return {'@context': 'https://schema.org', '@graph': [...(page === 'home' ? [website] : []), org, ...stores]};
 }
