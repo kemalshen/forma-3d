@@ -193,3 +193,64 @@ export const GUIDE_TEASERS: Record<Lang, string[]> = {
     "Soplo eskirganini qaysi belgilardan bilish mumkin va qachon po‘lat o‘rniga qattiqlashtirilgan soplo kerak bo‘ladi."
   ]
 };
+
+// Страница /ru|uz/catalog/parts (первая страница списка): кто мы и частые вопросы (2026-11-06).
+// Цель — чтобы Google и обзор от ИИ могли пересказать «где купить запчасти Bambu Lab в Ташкенте».
+// Факты — только с сайта (доставка, оплата, контакты); без цен, без «официальный».
+export const PARTS_INTRO: Record<Lang, string> = {
+  ru: 'Forma 3D — магазин запчастей и расходников для 3D-принтеров Bambu Lab в Ташкенте: хотэнды и сопла, печатные пластины, AMS, детали для ремонта. Доставим по Ташкенту в день заказа или на следующий, по Узбекистану — за 1–4 дня.',
+  uz: 'Forma 3D — Toshkentdagi Bambu Lab 3D-printerlari uchun ehtiyot qismlar va sarf materiallari do‘koni: hotendlar va soplolar, bosma stollari, AMS, ta’mirlash uchun detallar. Toshkent bo‘ylab buyurtma kuni yoki ertasiga, O‘zbekiston bo‘ylab 1–4 kunda yetkazamiz.',
+};
+
+export const PARTS_FAQ: Record<Lang, Faq> = {
+  ru: {
+    title: 'Частые вопросы о запчастях Bambu Lab',
+    items: [
+      [
+        'Где купить запчасти для Bambu Lab в Ташкенте?',
+        'В Forma 3D: оформите заказ на сайте, позвоните по номеру +998 99 454-19-13 или напишите в Telegram @kemalsen. Курьер привезёт заказ по Ташкенту, при заказе до 14:00 — в тот же день. Можно забрать самовывозом: Ташкент, ул. Бобура, 42, или Навои, ул. Спутник, 3. Условия — на странице «[Доставка и оплата](delivery)».',
+      ],
+      [
+        'Как подобрать запчасть под мой принтер?',
+        'Напишите в Telegram @kemalsen модель принтера (A1, A1 mini, P1S, X1C, H2D и другие) и что нужно заменить, можно с фото детали, — подберём совместимую. Хотэнды разделены по моделям: [для A1 и A1 mini](product/hotend-a1-04-steel), [для P1P и P1S](product/hotend-p1-04), [для X1 и X1C](product/hotend-x1-04).',
+      ],
+      [
+        'Запчасти оригинальные?',
+        'Мы продаём оригинальную продукцию Bambu Lab. Бренд каждой детали указан в карточке товара — если позиция не от Bambu Lab, это видно сразу.',
+      ],
+      [
+        'Сколько ждать, если детали нет в наличии?',
+        'Товары с пометкой «Под заказ» привозим за {lead}. Точный срок менеджер назовёт при оформлении заказа.',
+      ],
+      [
+        'Как оплатить заказ?',
+        'Онлайн через Payme, Click, UzCard и Humo. Для компаний — оплата по счёту и закрывающие документы, подробнее — «[Для бизнеса](business)».',
+      ],
+    ],
+  },
+  uz: {
+    title: 'Bambu Lab ehtiyot qismlari haqida ko‘p beriladigan savollar',
+    items: [
+      [
+        'Toshkentda Bambu Lab ehtiyot qismlarini qayerdan sotib olish mumkin?',
+        'Forma 3D’da: saytda buyurtma bering, +998 99 454-19-13 raqamiga qo‘ng‘iroq qiling yoki Telegram @kemalsen’ga yozing. Kuryer buyurtmani Toshkent bo‘ylab yetkazadi, 14:00 gacha berilgan buyurtma — shu kuni. Olib ketish ham mumkin: Toshkent, Bobur ko‘chasi, 42 yoki Navoiy, Sputnik ko‘chasi, 3. Shartlar — «[Yetkazib berish va to‘lov](delivery)» sahifasida.',
+      ],
+      [
+        'Printerimga mos ehtiyot qismni qanday tanlayman?',
+        'Telegram @kemalsen’ga printer modelini (A1, A1 mini, P1S, X1C, H2D va boshqalar) va nimani almashtirish kerakligini yozing, detal rasmini ham yuborishingiz mumkin — mosini tanlab beramiz. Hotendlar modellar bo‘yicha ajratilgan: [A1 va A1 mini uchun](product/hotend-a1-04-steel), [P1P va P1S uchun](product/hotend-p1-04), [X1 va X1C uchun](product/hotend-x1-04).',
+      ],
+      [
+        'Ehtiyot qismlar originalmi?',
+        'Biz Bambu Lab original mahsulotlarini sotamiz. Har bir detalning brendi mahsulot kartochkasida ko‘rsatilgan — agar u Bambu Lab’niki bo‘lmasa, bu darhol ko‘rinadi.',
+      ],
+      [
+        'Detal mavjud bo‘lmasa, qancha kutish kerak?',
+        '«Buyurtma asosida» belgisi bor mahsulotlarni {lead} ichida olib kelamiz. Aniq muddatni menejer buyurtma paytida aytadi.',
+      ],
+      [
+        'Buyurtmani qanday to‘lash mumkin?',
+        'Payme, Click, UzCard va Humo orqali onlayn. Kompaniyalar uchun — hisob orqali to‘lov va yopuvchi hujjatlar, batafsil — «[Biznes uchun](business)».',
+      ],
+    ],
+  },
+};
