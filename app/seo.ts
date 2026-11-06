@@ -1,6 +1,6 @@
 import {ORDER_LEAD_TIME} from './stock';
 import type {Metadata} from 'next';
-import {products, productBrand, type Product} from './catalog';
+import {products, productBrand, fromPrice, type Product} from './catalog';
 import productSeoData from './data/product-seo.json';
 import {ARTICLES, findArticle} from './articles';
 import {MATERIAL_SLUGS, type MaterialSlug} from './material-pages';
@@ -125,14 +125,17 @@ function productDescription(p: Product, uz: boolean, h1: string) {
   const override = DESCRIPTION_OVERRIDES[p.id];
   if (override) return uz ? override.uz : override.ru;
   const kind = productKind(p);
-  const price = p.price != null ? formatPrice(p.price) : '';
+  // Real price, or the temporary «от 200 000» (ru: «Цена от 200 000 сум», uz: «Narxi 200 000 so‘mdan»).
+  const from = p.price == null ? fromPrice(p) : null;
+  const price = p.price != null ? formatPrice(p.price) : from != null ? `${uz ? '' : 'от '}${formatPrice(from)}` : '';
+  const som = from != null ? 'so‘mdan' : 'so‘m';
 
   if (kind === 'part') {
     const brand = productBrand(p);
     const original = brand === 'Bambu Lab'; // own kits and no-name accessories are not called "original"
     const byModel = /\b(A1|A2L|P1P?|P1S|P2S|X1[CE]?|X2D|H2[DSC])\b/.test(`${p.color} ${p.variantLabel ?? ''}`); // «подберём по модели» only where models matter
     if (uz) {
-      const text = `${h1}.${price ? ` Narxi ${price} so‘m.` : ''} ${original ? 'Original ehtiyot qism, ' : ''}Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.${byModel ? ' Modelga qarab tanlaymiz.' : ''}`;
+      const text = `${h1}.${price ? ` Narxi ${price} ${som}.` : ''} ${original ? 'Original ehtiyot qism, ' : ''}Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.${byModel ? ' Modelga qarab tanlaymiz.' : ''}`;
       return fitDescription(text, [[' Modelga qarab tanlaymiz.', ''], ['Original ehtiyot qism, Toshkentda', 'Toshkentda']]);
     }
     const tail = (original ? ' Оригинальная запчасть, доставка по Ташкенту в день заказа или на следующий.' : ' Доставка по Ташкенту в день заказа или на следующий.') + (byModel ? ' Подберём по модели.' : '');
@@ -141,18 +144,31 @@ function productDescription(p: Product, uz: boolean, h1: string) {
 
   const {line, color} = filamentParts(p, uz);
   if (kind === 'request' || kind === 'choice') {
+    const priceTail = price ? (uz ? ` Narxi ${price} ${som}.` : ` Цена ${price} сум.`) : '';
     if (kind === 'choice')
       return uz
-        ? `Bambu Lab ${line} g‘altakda, 1 kg, 1,75 mm. Rangni buyurtmada tanlaymiz. Original filament. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.`
-        : `Bambu Lab ${line} на катушке, 1 кг, 1,75 мм. Цвет на выбор — уточним при заказе. Оригинальный филамент, доставка по Ташкенту в день заказа или на следующий.`;
+        ? fitDescription(
+            `Bambu Lab ${line} g‘altakda, 1 kg, 1,75 mm.${priceTail} Rangni buyurtmada tanlaymiz. Original filament. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.`,
+            [[' Original filament.', ''], [' kuni yoki ertasiga', '']],
+          )
+        : fitDescription(
+            `Bambu Lab ${line} на катушке, 1 кг, 1,75 мм.${priceTail} Цвет на выбор — уточним при заказе. Оригинальный филамент, доставка по Ташкенту в день заказа или на следующий.`,
+            [[' Оригинальный филамент, доставка', ' Доставка'], [' в день заказа или на следующий', '']],
+          );
     return uz
-      ? `Bambu Lab ${line} buyurtmaga: g‘altakda 1 kg, 1,75 mm. Rang va yetkazish muddatini buyurtmada aniqlaymiz. Original Bambu Lab mahsuloti.`
-      : `Bambu Lab ${line} под заказ: 1 кг на катушке, 1,75 мм. Цвет и срок поставки уточним при заказе. Оригинальная продукция Bambu Lab.`;
+      ? fitDescription(
+          `Bambu Lab ${line} buyurtmaga: g‘altakda 1 kg, 1,75 mm.${priceTail} Rang va yetkazish muddatini buyurtmada aniqlaymiz. Original Bambu Lab mahsuloti.`,
+          [[' Original Bambu Lab mahsuloti.', '']],
+        )
+      : fitDescription(
+          `Bambu Lab ${line} под заказ: 1 кг на катушке, 1,75 мм.${priceTail} Цвет и срок поставки уточним при заказе. Оригинальная продукция Bambu Lab.`,
+          [[' Оригинальная продукция Bambu Lab.', '']],
+        );
   }
   if (kind === 'refill') {
     if (uz)
       return price
-        ? `Bambu Lab ${line} ${color} refill: 1 kg, 1,75 mm, g‘altaksiz. Narxi ${price} so‘m. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.`
+        ? `Bambu Lab ${line} ${color} refill: 1 kg, 1,75 mm, g‘altaksiz. Narxi ${price} ${som}. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.`
         : `Bambu Lab ${line} ${color} refill: 1 kg, 1,75 mm, g‘altaksiz — qayta ishlatiladigan g‘altak uchun. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.`;
     return price
       ? `Рефилл Bambu Lab ${line} ${color}: 1 кг филамента 1,75 мм без катушки. Цена ${price} сум. Доставка по Ташкенту в день заказа или на следующий.`
@@ -160,7 +176,7 @@ function productDescription(p: Product, uz: boolean, h1: string) {
   }
   if (uz)
     return fitDescription(
-      `Bambu Lab ${line} ${color} g‘altakda, 1 kg, 1,75 mm. Original filament. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.${price ? ` Narxi ${price} so‘m.` : ' Tanlashga yordam beramiz.'}`,
+      `Bambu Lab ${line} ${color} g‘altakda, 1 kg, 1,75 mm. Original filament. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz.${price ? ` Narxi ${price} ${som}.` : ' Tanlashga yordam beramiz.'}`,
       [[' Tanlashga yordam beramiz.', '']],
     );
   return fitDescription(
