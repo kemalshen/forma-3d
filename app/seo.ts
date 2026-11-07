@@ -4,6 +4,7 @@ import {products, productBrand, fromPrice, type Product} from './catalog';
 import productSeoData from './data/product-seo.json';
 import {ARTICLES, findArticle} from './articles';
 import {MATERIAL_SLUGS, type MaterialSlug} from './material-pages';
+import {PART_SLUGS} from './part-pages';
 import {DEFAULT_CONTACTS, HOURS, PICKUP_POINTS, phoneDigits, type Contacts} from './contacts';
 
 // Public address of the site. Can be overridden with the SITE_URL env var.
@@ -14,7 +15,7 @@ export type Lang = (typeof LANGS)[number];
 // Pages the store can render. Anything else returns a real 404.
 export const PAGES = ['', 'catalog', 'product', 'cart', 'business', 'account', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'] as const;
 // Indexable pages that go into the sitemap (cart / account are private; ?page=N is not listed).
-export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/pla', 'catalog/petg', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
+export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/hotends', 'catalog/pla', 'catalog/petg', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
 
 export function findProduct(id?: string) {
   return id ? products.find((p) => p.id === id) : undefined;
@@ -25,7 +26,7 @@ export function isValidPath(path: string[]) {
   const [page = '', sub, extra] = path;
   if (!(PAGES as readonly string[]).includes(page)) return false;
   if (page === 'product') return path.length === 2 && !!findProduct(sub);
-  if (page === 'catalog') return !sub || ((sub === 'parts' || (MATERIAL_SLUGS as string[]).includes(sub)) && !extra);
+  if (page === 'catalog') return !sub || ((sub === 'parts' || (MATERIAL_SLUGS as string[]).includes(sub) || (PART_SLUGS as string[]).includes(sub)) && !extra);
   if (page === 'knowledge') return !sub || (!!findArticle(sub) && !extra);
   return path.length <= 1;
 }
@@ -199,7 +200,7 @@ export function productSeo(p: Product, lang: Lang): ProductSeo {
       .replace('Доставка по Ташкенту в день заказа или на следующий', `Под заказ из Китая за ${ORDER_LEAD_TIME.ru}`)
       .replace('Toshkentda buyurtma kuni yoki ertasiga yetkazamiz', `Xitoydan ${ORDER_LEAD_TIME.uz} ichida buyurtma asosida olib kelamiz`);
   // Срок «под заказ» длиннее фразы о доставке — снова уложиться в лимит.
-  description = fitDescription(description, [[' Подберём по модели.', ''], [' Modelga qarab tanlaymiz.', '']]);
+  description = fitDescription(description, [[' Подберём по модели.', ''], [' Modelga qarab tanlaymiz.', ''], ['Оригинальная запчасть, под заказ', 'Под заказ'], ['Original ehtiyot qism, Xitoydan', 'Xitoydan']]);
   return {...base, description, kind: productKind(p), format: formatLabel(p, uz)};
 }
 
@@ -255,6 +256,18 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
       title: 'Bambu Lab ehtiyot qismlari Toshkentda | Forma 3D',
       description: 'Bambu Lab A1, P1S, X1C, H2D uchun hotend va soplolar, bosma stollari, AMS qismlari. Toshkentda buyurtma kuni yoki ertasiga yetkazamiz. Modelga qarab tanlaymiz.',
       h1: 'Bambu Lab uchun ehtiyot qismlar va sarf materiallari',
+    },
+  },
+  'catalog/hotends': {
+    ru: {
+      title: 'Хотэнды и сопла Bambu Lab купить в Ташкенте | Forma 3D',
+      description: 'Оригинальные хотэнды Bambu Lab в Ташкенте: 0,4 мм для A1, P1S, X1C, закалённые для CF/GF, 0,2 и 0,6 мм, хотэнды для P2S и H2D. Подберём по модели.',
+      h1: 'Хотэнды и сопла для Bambu Lab A1, P1S, X1C',
+    },
+    uz: {
+      title: 'Bambu Lab hotend va soplolari, Toshkent | Forma 3D',
+      description: 'Toshkentda original Bambu Lab hotendlari: A1, P1S, X1C uchun 0,4 mm, CF/GF uchun toblangan, 0,2 va 0,6 mm, P2S va H2D uchun. Modelga qarab tanlaymiz.',
+      h1: 'Bambu Lab A1, P1S, X1C uchun hotend va soplolar',
     },
   },
   'catalog/pla': {
@@ -337,6 +350,10 @@ const materialPaginated = (slug: MaterialSlug): Record<Lang, (n: number) => Page
   };
 };
 const PAGINATED: Record<string, Record<Lang, (n: number) => PageText>> = {
+  'catalog/hotends': {
+    ru: (n) => ({title: `Хотэнды и сопла Bambu Lab — страница ${n} | Forma 3D`, description: `Хотэнды и сопла Bambu Lab, страница ${n}: 0,2, 0,4 и 0,6 мм, закалённые хотэнды для A1, P1S, X1C и H2D.`, h1: `Хотэнды и сопла для Bambu Lab — страница ${n}`}),
+    uz: (n) => ({title: `Bambu Lab hotend va soplolari — ${n}-sahifa | Forma 3D`, description: `Bambu Lab hotend va soplolari, ${n}-sahifa: 0,2, 0,4 va 0,6 mm, A1, P1S, X1C va H2D uchun toblangan hotendlar.`, h1: `Bambu Lab uchun hotend va soplolar — ${n}-sahifa`}),
+  },
   'catalog/pla': materialPaginated('pla'),
   'catalog/petg': materialPaginated('petg'),
   catalog: {
@@ -447,6 +464,8 @@ export function breadcrumbTrail(lang: Lang, path: string[], catalogPage = 1): {n
       {name: productSeo(p, lang).h1},
     ];
   }
+  if (path[0] === 'catalog' && path[1] && (PART_SLUGS as string[]).includes(path[1]))
+    return [home, {name: uz ? 'Ehtiyot qismlar' : 'Запчасти и расходники', href: `/${lang}/catalog/parts`}, {name: pageText(lang, path, catalogPage).h1}];
   if (path[0] === 'catalog' && path[1] && path[1] !== 'parts')
     return [home, {name: uz ? 'Katalog' : 'Каталог', href: `/${lang}/catalog`}, {name: pageText(lang, path, catalogPage).h1}];
   if (path[0] === 'catalog') return [home, {name: pageText(lang, path, catalogPage).h1}];
