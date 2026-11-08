@@ -15,7 +15,7 @@ export type Lang = (typeof LANGS)[number];
 // Pages the store can render. Anything else returns a real 404.
 export const PAGES = ['', 'catalog', 'product', 'cart', 'business', 'account', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'] as const;
 // Indexable pages that go into the sitemap (cart / account are private; ?page=N is not listed).
-export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/hotends', 'catalog/pla', 'catalog/petg', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
+export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/hotends', 'catalog/pla', 'catalog/petg', 'catalog/abs-asa', 'catalog/tpu', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
 
 export function findProduct(id?: string) {
   return id ? products.find((p) => p.id === id) : undefined;
@@ -294,6 +294,30 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
       h1: '3D-printer uchun Bambu Lab PETG plastik',
     },
   },
+  'catalog/abs-asa': {
+    ru: {
+      title: 'ABS и ASA пластик Bambu Lab купить в Ташкенте | Forma 3D',
+      description: 'ABS и ASA пластик Bambu Lab 1,75 мм в Ташкенте, катушка 1 кг. Термостойкие детали, ASA — для улицы. Для принтеров с закрытым корпусом: P1S, X1C.',
+      h1: 'ABS и ASA пластик Bambu Lab для 3D-принтера',
+    },
+    uz: {
+      title: 'Bambu Lab ABS va ASA plastik, Toshkent | Forma 3D',
+      description: 'Toshkentda Bambu Lab ABS va ASA plastik 1,75 mm, g‘altakda 1 kg. Issiqqa chidamli detallar, ASA — ko‘cha uchun. Yopiq korpusli printerlar uchun.',
+      h1: '3D-printer uchun Bambu Lab ABS va ASA plastik',
+    },
+  },
+  'catalog/tpu': {
+    ru: {
+      title: 'TPU пластик Bambu Lab купить в Ташкенте | Forma 3D',
+      description: 'Гибкий TPU пластик Bambu Lab 95A HF 1,75 мм в Ташкенте, катушка 1 кг: накладки, амортизаторы, чехлы. Подходит для A1, печать с внешней катушки.',
+      h1: 'Гибкий TPU пластик Bambu Lab для 3D-принтера',
+    },
+    uz: {
+      title: 'Bambu Lab TPU plastik sotib olish, Toshkent | Forma 3D',
+      description: 'Toshkentda egiluvchan Bambu Lab TPU 95A HF plastik 1,75 mm, g‘altakda 1 kg: qoplamalar, amortizatorlar, g‘iloflar. A1 uchun mos, tashqi g‘altakdan.',
+      h1: '3D-printer uchun egiluvchan Bambu Lab TPU plastik',
+    },
+  },
   business: {
     ru: {
       title: 'Филамент оптом в Ташкенте для бизнеса и школ | Forma 3D',
@@ -343,7 +367,7 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
 
 // Catalog pages 2+ (brief 2.3–2.6).
 const materialPaginated = (slug: MaterialSlug): Record<Lang, (n: number) => PageText> => {
-  const name = slug === 'pla' ? 'PLA' : 'PETG';
+  const name = {pla: 'PLA', petg: 'PETG', 'abs-asa': 'ABS / ASA', tpu: 'TPU'}[slug];
   return {
     ru: (n) => ({title: `${name} пластик Bambu Lab — страница ${n} | Forma 3D`, description: `${name} пластик Bambu Lab 1,75 мм, страница ${n}: катушки 1 кг и рефиллы с доставкой по Ташкенту.`, h1: `${name} пластик Bambu Lab для 3D-принтера — страница ${n}`}),
     uz: (n) => ({title: `Bambu Lab ${name} plastik — ${n}-sahifa | Forma 3D`, description: `Bambu Lab ${name} plastik 1,75 mm, ${n}-sahifa: g‘altakda 1 kg va refill, Toshkent bo‘ylab yetkazib berish.`, h1: `3D-printer uchun Bambu Lab ${name} plastik — ${n}-sahifa`}),
@@ -356,6 +380,8 @@ const PAGINATED: Record<string, Record<Lang, (n: number) => PageText>> = {
   },
   'catalog/pla': materialPaginated('pla'),
   'catalog/petg': materialPaginated('petg'),
+  'catalog/abs-asa': materialPaginated('abs-asa'),
+  'catalog/tpu': materialPaginated('tpu'),
   catalog: {
     ru: (n) => ({title: `Филамент Bambu Lab — страница ${n} | Forma 3D`, description: `Каталог филамента Bambu Lab, страница ${n}: PLA, PETG, ABS, ASA, TPU и инженерные пластики с доставкой по Ташкенту.`, h1: `Филамент Bambu Lab для 3D-принтера — страница ${n}`}),
     uz: (n) => ({title: `Bambu Lab filament — ${n}-sahifa | Forma 3D`, description: `Bambu Lab filamenti katalogi, ${n}-sahifa: PLA, PETG, ABS, ASA, TPU va muhandislik plastiklari, Toshkent bo‘ylab yetkazib berish.`, h1: `3D-printer uchun Bambu Lab filamenti — ${n}-sahifa`}),
