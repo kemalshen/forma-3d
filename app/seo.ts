@@ -514,8 +514,17 @@ export function breadcrumbTrail(lang: Lang, path: string[], catalogPage = 1): {n
   if (path[0] === 'catalog') return [home, {name: pageText(lang, path, catalogPage).h1}];
   const article = path[0] === 'knowledge' ? findArticle(path[1]) : undefined;
   if (article) return [home, {name: pageText(lang, ['knowledge']).h1, href: `/${lang}/knowledge`}, {name: article[lang].h1}];
+  const info = path.length === 1 ? INFO_CRUMB[path[0]] : undefined;
+  if (info) return [home, {name: info[lang]}];
   return [];
 }
+
+/** Короткие названия информационных страниц для видимых крошек и BreadcrumbList (одинаковые в обоих). */
+export const INFO_CRUMB: Record<string, {ru: string; uz: string}> = {
+  business: {ru: 'B2B', uz: 'B2B'},
+  delivery: {ru: 'Доставка', uz: 'Yetkazib berish'},
+  knowledge: {ru: 'База знаний', uz: 'Bilimlar bazasi'},
+};
 
 /** Article JSON-LD for /knowledge/<slug>. */
 export function articleJsonLd(lang: Lang, slug: string) {
