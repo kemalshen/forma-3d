@@ -1,10 +1,10 @@
 import {ORDER_LEAD_TIME} from './stock';
 import type {Metadata} from 'next';
-import {products, productBrand, fromPrice, type Product} from './catalog';
+import {products, productBrand, fromPrice, matchesMaterial, type Product} from './catalog';
 import productSeoData from './data/product-seo.json';
 import {ARTICLES, findArticle} from './articles';
-import {MATERIAL_SLUGS, type MaterialSlug} from './material-pages';
-import {PART_SLUGS} from './part-pages';
+import {MATERIAL_SLUGS, MATERIAL_FILTER, type MaterialSlug} from './material-pages';
+import {PART_SLUGS, partSlugOf} from './part-pages';
 import {DEFAULT_CONTACTS, HOURS, PICKUP_POINTS, phoneDigits, type Contacts} from './contacts';
 
 // Public address of the site. Can be overridden with the SITE_URL env var.
@@ -476,6 +476,21 @@ export function productJsonLd(p: Product, lang: Lang) {
   };
 }
 
+/** Короткие названия посадочных категорий для хлебных крошек товара (2026-11-09). */
+const SUBCATEGORY_LABEL: Record<string, Record<Lang, string>> = {
+  hotends: {ru: 'Хотэнды и сопла', uz: 'Hotend va soplolar'},
+  pla: {ru: 'PLA пластик', uz: 'PLA plastik'},
+  petg: {ru: 'PETG пластик', uz: 'PETG plastik'},
+  'abs-asa': {ru: 'ABS и ASA пластик', uz: 'ABS va ASA plastik'},
+  tpu: {ru: 'TPU пластик', uz: 'TPU plastik'},
+};
+
+/** Посадочная категория товара (/catalog/hotends, /catalog/pla …), если она есть — для крошек и перелинковки. */
+export function productSubcategory(p: Product, lang: Lang): {slug: string; to: string; name: string} | undefined {
+  const slug = p.type === 'parts' ? partSlugOf(p.category ?? '') : MATERIAL_SLUGS.find((s) => matchesMaterial(p, MATERIAL_FILTER[s]));
+  return slug ? {slug, to: `catalog/${slug}`, name: SUBCATEGORY_LABEL[slug][lang]} : undefined;
+}
+
 /** Breadcrumb trail shared by the visible crumbs and BreadcrumbList (brief 1.6). */
 export function breadcrumbTrail(lang: Lang, path: string[], catalogPage = 1): {name: string; href?: string}[] {
   const uz = lang === 'uz';
@@ -484,9 +499,11 @@ export function breadcrumbTrail(lang: Lang, path: string[], catalogPage = 1): {n
     const p = findProduct(path[1]);
     if (!p) return [];
     const parts = p.type === 'parts';
+    const sub = productSubcategory(p, lang);
     return [
       home,
       parts ? {name: uz ? 'Ehtiyot qismlar' : 'Запчасти и расходники', href: `/${lang}/catalog/parts`} : {name: uz ? 'Katalog' : 'Каталог', href: `/${lang}/catalog`},
+      ...(sub ? [{name: sub.name, href: `/${lang}/${sub.to}`}] : []),
       {name: productSeo(p, lang).h1},
     ];
   }
