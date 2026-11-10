@@ -20,7 +20,6 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/petg-ili-pla', text: 'PETG или PLA: что выбрать'},
         {to: 'knowledge/kakoy-filament-vybrat', text: 'какой филамент выбрать новичку'},
-        {to: 'catalog/petg', text: 'PETG пластик'},
       ],
     },
     uz: {
@@ -28,7 +27,6 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/petg-ili-pla', text: 'PETG yoki PLA: qaysi birini tanlash'},
         {to: 'knowledge/kakoy-filament-vybrat', text: 'yangi boshlovchi uchun qaysi filament'},
-        {to: 'catalog/petg', text: 'PETG plastik'},
       ],
     },
   },
@@ -38,7 +36,6 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/petg-ili-pla', text: 'PETG или PLA: что выбрать'},
         {to: 'knowledge/kak-hranit-filament', text: 'как хранить и сушить филамент'},
-        {to: 'catalog/pla', text: 'PLA пластик'},
       ],
     },
     uz: {
@@ -46,7 +43,6 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/petg-ili-pla', text: 'PETG yoki PLA: qaysi birini tanlash'},
         {to: 'knowledge/kak-hranit-filament', text: 'filamentni saqlash va quritish'},
-        {to: 'catalog/pla', text: 'PLA plastik'},
       ],
     },
   },
@@ -56,7 +52,6 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/kakoy-filament-vybrat', text: 'какой филамент выбрать'},
         {to: 'knowledge/petg-ili-pla', text: 'PETG или PLA: что выбрать'},
-        {to: 'catalog/petg', text: 'PETG пластик'},
       ],
     },
     uz: {
@@ -64,7 +59,6 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/kakoy-filament-vybrat', text: 'qaysi filamentni tanlash kerak'},
         {to: 'knowledge/petg-ili-pla', text: 'PETG yoki PLA: qaysi birini tanlash'},
-        {to: 'catalog/petg', text: 'PETG plastik'},
       ],
     },
   },
@@ -74,7 +68,6 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/kakoy-filament-vybrat', text: 'какой филамент выбрать'},
         {to: 'knowledge/kak-hranit-filament', text: 'как хранить и сушить филамент'},
-        {to: 'catalog/pla', text: 'PLA пластик'},
       ],
     },
     uz: {
@@ -82,8 +75,15 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       links: [
         {to: 'knowledge/kakoy-filament-vybrat', text: 'qaysi filamentni tanlash kerak'},
         {to: 'knowledge/kak-hranit-filament', text: 'filamentni saqlash va quritish'},
-        {to: 'catalog/pla', text: 'PLA plastik'},
       ],
     },
   },
+};
+
+/** Подписи ссылок на страницы материалов: блок «Другие материалы» и вводный текст общего каталога. */
+export const MATERIAL_LINK_TEXT: Record<MaterialSlug, {ru: string; uz: string}> = {
+  pla: {ru: 'PLA пластик', uz: 'PLA plastik'},
+  petg: {ru: 'PETG пластик', uz: 'PETG plastik'},
+  'abs-asa': {ru: 'ABS и ASA пластик', uz: 'ABS va ASA plastik'},
+  tpu: {ru: 'гибкий TPU пластик', uz: 'egiluvchan TPU plastik'},
 };
