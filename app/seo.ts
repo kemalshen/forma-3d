@@ -15,7 +15,7 @@ export type Lang = (typeof LANGS)[number];
 // Pages the store can render. Anything else returns a real 404.
 export const PAGES = ['', 'catalog', 'product', 'cart', 'business', 'account', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'] as const;
 // Indexable pages that go into the sitemap (cart / account are private; ?page=N is not listed).
-export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/hotends', 'catalog/pla', 'catalog/petg', 'catalog/abs-asa', 'catalog/tpu', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
+export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/hotends', 'catalog/plates', 'catalog/pla', 'catalog/petg', 'catalog/abs-asa', 'catalog/tpu', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
 
 export function findProduct(id?: string) {
   return id ? products.find((p) => p.id === id) : undefined;
@@ -270,6 +270,18 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
       h1: 'Bambu Lab A1, P1S, X1C uchun hotend va soplolar',
     },
   },
+  'catalog/plates': {
+    ru: {
+      title: 'Печатные столы Bambu Lab купить в Ташкенте | Forma 3D',
+      description: 'Оригинальные столы Bambu Lab в Ташкенте: Textured PEI 180 мм для A1 mini и 256 мм для A1, P1S, X1C, Smooth PEI, Cool Plate SuperTack, Engineering Plate.',
+      h1: 'Печатные столы Bambu Lab для A1, A1 mini, P1S, X1C',
+    },
+    uz: {
+      title: 'Bambu Lab bosma stollari, Toshkent | Forma 3D',
+      description: 'Toshkentda original Bambu Lab stollari: A1 mini uchun 180 mm va A1, P1S, X1C uchun 256 mm Textured PEI, Smooth PEI, Cool Plate SuperTack, Engineering Plate.',
+      h1: 'Bambu Lab A1, A1 mini, P1S, X1C uchun bosma stollari',
+    },
+  },
   'catalog/pla': {
     ru: {
       title: 'PLA пластик Bambu Lab купить в Ташкенте | Forma 3D',
@@ -479,6 +491,7 @@ export function productJsonLd(p: Product, lang: Lang) {
 /** Короткие названия посадочных категорий для хлебных крошек товара (2026-11-09). */
 const SUBCATEGORY_LABEL: Record<string, Record<Lang, string>> = {
   hotends: {ru: 'Хотэнды и сопла', uz: 'Hotend va soplolar'},
+  plates: {ru: 'Печатные столы', uz: 'Bosma stollari'},
   pla: {ru: 'PLA пластик', uz: 'PLA plastik'},
   petg: {ru: 'PETG пластик', uz: 'PETG plastik'},
   'abs-asa': {ru: 'ABS и ASA пластик', uz: 'ABS va ASA plastik'},
