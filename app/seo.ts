@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import {products, productBrand, fromPrice, matchesMaterial, type Product} from './catalog';
 import productSeoData from './data/product-seo.json';
 import {ARTICLES, findArticle} from './articles';
-import {MATERIAL_SLUGS, MATERIAL_FILTER, type MaterialSlug} from './material-pages';
-import {PART_SLUGS, partSlugOf} from './part-pages';
+import {MATERIAL_SLUGS, MATERIAL_FILTER, MATERIAL_FAQ, type MaterialSlug} from './material-pages';
+import {PART_SLUGS, PART_FAQ, partSlugOf, type PartSlug} from './part-pages';
 import {DEFAULT_CONTACTS, HOURS, PICKUP_POINTS, phoneDigits, type Contacts} from './contacts';
 
 // Public address of the site. Can be overridden with the SITE_URL env var.
@@ -567,6 +567,25 @@ export function breadcrumbJsonLd(lang: Lang, path: string[], catalogPage = 1) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: trail.map((c, i) => ({'@type': 'ListItem', position: i + 1, name: c.name, ...(c.href ? {item: `${SITE_URL}${c.href}`} : {})})),
+  };
+}
+
+/** FAQPage для видимого блока «Частые вопросы» на /catalog/<материал> и /catalog/hotends|plates (только стр. 1).
+ *  /catalog/parts не размечаем: в его FAQ есть UzCard (forbidden-claim-uzcard-001, ждёт владельца). */
+export function faqJsonLd(lang: Lang, path: string[], catalogPage = 1) {
+  if (path[0] !== 'catalog' || !path[1] || path.length > 2 || catalogPage !== 1) return null;
+  const sub = path[1];
+  const faq = (MATERIAL_SLUGS as string[]).includes(sub)
+    ? MATERIAL_FAQ[sub as MaterialSlug][lang]
+    : (PART_SLUGS as string[]).includes(sub)
+      ? PART_FAQ[sub as PartSlug][lang]
+      : null;
+  if (!faq) return null;
+  const plain = (s: string) => s.replace('{lead}', ORDER_LEAD_TIME[lang]).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.items.map(([q, a]) => ({'@type': 'Question', name: q, acceptedAnswer: {'@type': 'Answer', text: plain(a)}})),
   };
 }
 
