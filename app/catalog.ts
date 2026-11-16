@@ -72,7 +72,7 @@ export function matchesMaterial(p:Product,m:string){
  if(m==='PETG')return p.name.startsWith('PETG');
  if(m==='ABS / ASA')return p.name==='ABS'||p.name==='ASA';
  if(m==='TPU')return p.name.startsWith('TPU');
- if(m==='PA / композиты')return p.name.includes('-CF')||p.name.startsWith('PA')||p.name==='PC';
+ if(m==='CF / PA / PC')return p.name.includes('-CF')||p.name.startsWith('PA')||p.name==='PC';
  return p.material===m;
 }
 export const canOrder=(p:Product)=>p.price!==null&&(p.stock??0)>0;

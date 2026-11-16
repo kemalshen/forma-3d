@@ -1,12 +1,13 @@
-// Посадочные страницы материалов: /ru|uz/catalog/pla, petg, abs-asa, tpu.
+// Посадочные страницы материалов: /ru|uz/catalog/pla, petg, abs-asa, tpu, engineering (инженерные пластики, 2026-11-16).
 // Это тот же каталог филамента с выбранным фильтром материала, плюс свой H1, мета и вводный текст.
 // Факты о материалах — из статей «PETG или PLA» и «Какой филамент выбрать» (данные Bambu Lab), без цен и сроков.
 
-export type MaterialSlug = 'pla' | 'petg' | 'abs-asa' | 'tpu';
-export const MATERIAL_SLUGS: MaterialSlug[] = ['pla', 'petg', 'abs-asa', 'tpu'];
+export type MaterialSlug = 'pla' | 'petg' | 'abs-asa' | 'tpu' | 'engineering';
+// Порядок важен: товар попадает в первую подходящую категорию (PLA-CF — в PLA, PETG-CF — в PETG).
+export const MATERIAL_SLUGS: MaterialSlug[] = ['pla', 'petg', 'abs-asa', 'tpu', 'engineering'];
 
 /** Значение фильтра «Материал» в каталоге (см. materials / matchesMaterial в catalog.ts). */
-export const MATERIAL_FILTER: Record<MaterialSlug, string> = {pla: 'PLA', petg: 'PETG', 'abs-asa': 'ABS / ASA', tpu: 'TPU'};
+export const MATERIAL_FILTER: Record<MaterialSlug, string> = {pla: 'PLA', petg: 'PETG', 'abs-asa': 'ABS / ASA', tpu: 'TPU', engineering: 'CF / PA / PC'};
 
 export const materialSlugOf = (filter: string): MaterialSlug | undefined =>
   MATERIAL_SLUGS.find((s) => MATERIAL_FILTER[s] === filter);
@@ -78,6 +79,22 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
       ],
     },
   },
+  engineering: {
+    ru: {
+      text: 'Инженерные пластики — для жёстких и прочных деталей: шестерни, кронштейны, корпуса, детали под нагрузку и нагрев. Здесь собраны композиты Bambu Lab с углеволокном — PLA-CF, PETG-CF, PET-CF, PAHT-CF, PA6-CF — и поликарбонат PC, 1,75 мм, на катушке 1 кг. Композиты с углеволокном абразивны: по данным Bambu Lab, частицы волокна быстро изнашивают стальные сопла и шестерни экструдера, поэтому для них нужен закалённый хотэнд. Для серии A1 производитель не рекомендует PC, PA и композиты с волокном — это материалы для принтеров с закрытым корпусом. Наличие и срок указаны в карточке каждого товара.',
+      links: [
+        {to: 'catalog/hotends', text: 'закалённые хотэнды и сопла'},
+        {to: 'knowledge/kakoy-filament-vybrat', text: 'какой филамент выбрать'},
+      ],
+    },
+    uz: {
+      text: 'Muhandislik plastiklari — qattiq va mustahkam detallar uchun: tishli g‘ildiraklar, kronshteynlar, korpuslar, yuk va issiqlikka ishlaydigan detallar. Bu yerda uglerod tolali Bambu Lab kompozitlari — PLA-CF, PETG-CF, PET-CF, PAHT-CF, PA6-CF — va polikarbonat PC, 1,75 mm, g‘altakda 1 kg. Uglerod tolali kompozitlar abraziv: Bambu Lab ma’lumotlariga ko‘ra, tola zarralari po‘lat soplo va ekstruder tishli g‘ildiraklarini tez yeyib yuboradi, shuning uchun ularga toblangan hotend kerak. A1 seriyasi uchun ishlab chiqaruvchi PC, PA va tolali kompozitlarni tavsiya etmaydi — bu yopiq korpusli printerlar uchun materiallar. Mavjudligi va muddati har bir mahsulot kartochkasida ko‘rsatilgan.',
+      links: [
+        {to: 'catalog/hotends', text: 'toblangan hotend va soplolar'},
+        {to: 'knowledge/kakoy-filament-vybrat', text: 'qaysi filamentni tanlash kerak'},
+      ],
+    },
+  },
 };
 
 /** Подписи ссылок на страницы материалов: блок «Другие материалы» и вводный текст общего каталога. */
@@ -86,6 +103,7 @@ export const MATERIAL_LINK_TEXT: Record<MaterialSlug, {ru: string; uz: string}> 
   petg: {ru: 'PETG пластик', uz: 'PETG plastik'},
   'abs-asa': {ru: 'ABS и ASA пластик', uz: 'ABS va ASA plastik'},
   tpu: {ru: 'гибкий TPU пластик', uz: 'egiluvchan TPU plastik'},
+  engineering: {ru: 'инженерные пластики с углеволокном и PC', uz: 'uglerod tolali muhandislik plastiklari va PC'},
 };
 
 // Частые вопросы на страницах материалов (2026-11-12): ответы на запросы вида «pla пластик ташкент»,
@@ -174,6 +192,26 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
         ['TPU ni Bambu Lab A1’da bosish mumkinmi?', 'Ha: A1 seriyasi uchun Bambu Lab TPU ni mos materiallar qatoriga kiritadi. Bambu Lab’da bu [TPU 95A HF](product/tpu-95a-hf-black-spool), 1,75 mm, g‘altakda 1 kg.'],
         ['TPU AMS bilan ishlaydimi?', 'Yo‘q. Ishlab chiqaruvchi ma’lumotlariga ko‘ra, TPU 95A HF hech qaysi AMS tizimi bilan mos emas: u tashqi g‘altak ushlagichidan va bitta rangda bosiladi. Shuning uchun TPU ga PLA bilan tajriba orttirgandan keyin o‘tgan ma’qul.'],
         ['TPU ni quritish kerakmi?', 'Ha, Bambu Lab TPU 95A HF ni ishlatishdan oldin quritishni tavsiya qiladi; rejim yorliqda va texnik varaqda ko‘rsatilgan. Ochilgan g‘altakni silikagelli germetik paketda saqlagan ma’qul — batafsil «[Filamentni saqlash va quritish](knowledge/kak-hranit-filament)» maqolasida.'],
+      ],
+    },
+  },
+  engineering: {
+    ru: {
+      title: 'Частые вопросы об инженерных пластиках',
+      items: [
+        ['Где купить инженерный пластик для 3D-принтера в Ташкенте?', BUY_RU('инженерный пластик')],
+        ['Какой хотэнд нужен для пластика с углеволокном?', 'Закалённый. Bambu Lab предупреждает: композиты с углеволокном (PLA-CF, PETG-CF, PA-CF) абразивны и быстро изнашивают стальные сопла и шестерни экструдера. Подходящие хотэнды — в разделе «[Хотэнды и сопла](catalog/hotends)».'],
+        ['Можно ли печатать PC и PA-CF на Bambu Lab A1?', 'Производитель не рекомендует: для серии A1 (открытый корпус) Bambu Lab относит PC, PA и композиты с углеволокном или стекловолокном к нерекомендуемым материалам — у крупных деталей растёт риск коробления и слабого сцепления слоёв. Для A1 выбирайте [PLA](catalog/pla), [PETG](catalog/petg) или TPU.'],
+        ['Как заказать инженерный пластик, которого нет в наличии?', 'Позиции с пометкой «Под заказ» привозим из официального магазина Bambu Lab за {lead}. Перед заказом подтвердим цену и срок — напишите в Telegram @kemalsen.'],
+      ],
+    },
+    uz: {
+      title: 'Muhandislik plastiklari haqida ko‘p beriladigan savollar',
+      items: [
+        ['Toshkentda 3D-printer uchun muhandislik plastikini qayerdan sotib olish mumkin?', BUY_UZ('muhandislik plastiki')],
+        ['Uglerod tolali plastik uchun qanday hotend kerak?', 'Toblangan. Bambu Lab ogohlantiradi: uglerod tolali kompozitlar (PLA-CF, PETG-CF, PA-CF) abraziv va po‘lat soplo hamda ekstruder tishli g‘ildiraklarini tez yeyib yuboradi. Mos hotendlar — «[Hotend va soplolar](catalog/hotends)» bo‘limida.'],
+        ['PC va PA-CF ni Bambu Lab A1’da bosish mumkinmi?', 'Ishlab chiqaruvchi tavsiya etmaydi: A1 seriyasi (ochiq korpus) uchun Bambu Lab PC, PA hamda uglerod yoki shisha tolali kompozitlarni tavsiya etilmaydigan materiallar qatoriga kiritadi — katta detallarda qiyshayish va qatlamlarning zaif yopishishi xavfi oshadi. A1 uchun [PLA](catalog/pla), [PETG](catalog/petg) yoki TPU ni tanlang.'],
+        ['Mavjud bo‘lmagan muhandislik plastikini qanday buyurtma qilish mumkin?', '«Buyurtma asosida» belgisi bor mahsulotlarni Bambu Lab rasmiy do‘konidan {lead} ichida olib kelamiz. Buyurtmadan oldin narx va muddatni tasdiqlaymiz — Telegram @kemalsen’ga yozing.'],
       ],
     },
   },

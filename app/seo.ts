@@ -15,7 +15,7 @@ export type Lang = (typeof LANGS)[number];
 // Pages the store can render. Anything else returns a real 404.
 export const PAGES = ['', 'catalog', 'product', 'cart', 'business', 'account', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'] as const;
 // Indexable pages that go into the sitemap (cart / account are private; ?page=N is not listed).
-export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/hotends', 'catalog/plates', 'catalog/pla', 'catalog/petg', 'catalog/abs-asa', 'catalog/tpu', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
+export const SITEMAP_PAGES = ['', 'catalog', 'catalog/parts', 'catalog/hotends', 'catalog/plates', 'catalog/pla', 'catalog/petg', 'catalog/abs-asa', 'catalog/tpu', 'catalog/engineering', 'business', 'delivery', 'contacts', 'knowledge', 'offer', 'privacy', 'returns'];
 
 export function findProduct(id?: string) {
   return id ? products.find((p) => p.id === id) : undefined;
@@ -330,6 +330,18 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
       h1: '3D-printer uchun egiluvchan Bambu Lab TPU plastik',
     },
   },
+  'catalog/engineering': {
+    ru: {
+      title: 'Инженерный пластик Bambu Lab в Ташкенте: CF, PC | Forma 3D',
+      description: 'Инженерные пластики Bambu Lab 1,75 мм в Ташкенте: PLA-CF, PETG-CF, PAHT-CF, PA6-CF, PET-CF и PC на катушке 1 кг. Для них нужен закалённый хотэнд.',
+      h1: 'Инженерные пластики Bambu Lab: углеволокно и поликарбонат',
+    },
+    uz: {
+      title: 'Bambu Lab muhandislik plastiklari, Toshkent | Forma 3D',
+      description: 'Toshkentda Bambu Lab muhandislik plastiklari 1,75 mm: PLA-CF, PETG-CF, PAHT-CF, PA6-CF, PET-CF va PC, g‘altakda 1 kg. Ular uchun toblangan hotend kerak.',
+      h1: 'Bambu Lab muhandislik plastiklari: uglerod tola va polikarbonat',
+    },
+  },
   business: {
     ru: {
       title: 'Филамент оптом в Ташкенте для бизнеса и школ | Forma 3D',
@@ -379,7 +391,12 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
 
 // Catalog pages 2+ (brief 2.3–2.6).
 const materialPaginated = (slug: MaterialSlug): Record<Lang, (n: number) => PageText> => {
-  const name = {pla: 'PLA', petg: 'PETG', 'abs-asa': 'ABS / ASA', tpu: 'TPU'}[slug];
+  const name = {pla: 'PLA', petg: 'PETG', 'abs-asa': 'ABS / ASA', tpu: 'TPU', engineering: ''}[slug];
+  if (slug === 'engineering')
+    return {
+      ru: (n) => ({title: `Инженерные пластики Bambu Lab — страница ${n} | Forma 3D`, description: `Инженерные пластики Bambu Lab 1,75 мм, страница ${n}: композиты с углеволокном и PC на катушке 1 кг.`, h1: `Инженерные пластики Bambu Lab — страница ${n}`}),
+      uz: (n) => ({title: `Bambu Lab muhandislik plastiklari — ${n}-sahifa | Forma 3D`, description: `Bambu Lab muhandislik plastiklari 1,75 mm, ${n}-sahifa: uglerod tolali kompozitlar va PC, g‘altakda 1 kg.`, h1: `Bambu Lab muhandislik plastiklari — ${n}-sahifa`}),
+    };
   return {
     ru: (n) => ({title: `${name} пластик Bambu Lab — страница ${n} | Forma 3D`, description: `${name} пластик Bambu Lab 1,75 мм, страница ${n}: катушки 1 кг и рефиллы с доставкой по Ташкенту.`, h1: `${name} пластик Bambu Lab для 3D-принтера — страница ${n}`}),
     uz: (n) => ({title: `Bambu Lab ${name} plastik — ${n}-sahifa | Forma 3D`, description: `Bambu Lab ${name} plastik 1,75 mm, ${n}-sahifa: g‘altakda 1 kg va refill, Toshkent bo‘ylab yetkazib berish.`, h1: `3D-printer uchun Bambu Lab ${name} plastik — ${n}-sahifa`}),
@@ -394,6 +411,7 @@ const PAGINATED: Record<string, Record<Lang, (n: number) => PageText>> = {
   'catalog/petg': materialPaginated('petg'),
   'catalog/abs-asa': materialPaginated('abs-asa'),
   'catalog/tpu': materialPaginated('tpu'),
+  'catalog/engineering': materialPaginated('engineering'),
   catalog: {
     ru: (n) => ({title: `Филамент Bambu Lab — страница ${n} | Forma 3D`, description: `Каталог филамента Bambu Lab, страница ${n}: PLA, PETG, ABS, ASA, TPU и инженерные пластики с доставкой по Ташкенту.`, h1: `Филамент Bambu Lab для 3D-принтера — страница ${n}`}),
     uz: (n) => ({title: `Bambu Lab filament — ${n}-sahifa | Forma 3D`, description: `Bambu Lab filamenti katalogi, ${n}-sahifa: PLA, PETG, ABS, ASA, TPU va muhandislik plastiklari, Toshkent bo‘ylab yetkazib berish.`, h1: `3D-printer uchun Bambu Lab filamenti — ${n}-sahifa`}),
@@ -496,6 +514,7 @@ const SUBCATEGORY_LABEL: Record<string, Record<Lang, string>> = {
   petg: {ru: 'PETG пластик', uz: 'PETG plastik'},
   'abs-asa': {ru: 'ABS и ASA пластик', uz: 'ABS va ASA plastik'},
   tpu: {ru: 'TPU пластик', uz: 'TPU plastik'},
+  engineering: {ru: 'Инженерные пластики', uz: 'Muhandislik plastiklari'},
 };
 
 /** Посадочная категория товара (/catalog/hotends, /catalog/pla …), если она есть — для крошек и перелинковки. */
