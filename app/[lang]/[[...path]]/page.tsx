@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import Store from '../../store';
 import {readContacts} from '../../contacts';
-import {LANGS, articleJsonLd, breadcrumbJsonLd, buildMetadata, faqJsonLd, findProduct, isValidPath, organizationJsonLd, productJsonLd, type Lang} from '../../seo';
+import {LANGS, articleJsonLd, breadcrumbJsonLd, buildMetadata, catalogPageCount, faqJsonLd, findProduct, isValidPath, organizationJsonLd, productJsonLd, type Lang} from '../../seo';
 
 type Props = {params: Promise<{lang: string; path?: string[]}>; searchParams: Promise<Record<string, string | string[] | undefined>>};
 
@@ -11,17 +11,22 @@ const pageNumber = (path: string[], raw: unknown) => {
   const n = Number(Array.isArray(raw) ? raw[0] : raw);
   return path[0] === 'catalog' && Number.isInteger(n) && n > 1 && n < 100 ? n : 1;
 };
+/** ?page=N beyond the last page of a catalog listing — answer 404 instead of a copy of the last page. */
+const pageOutOfRange = (path: string[], raw: unknown) => {
+  const n = Number(Array.isArray(raw) ? raw[0] : raw);
+  return path[0] === 'catalog' && Number.isInteger(n) && n > catalogPageCount(path);
+};
 const ld = (data: unknown) => JSON.stringify(data).replace(/</g, '\\u003c');
 
 export async function generateMetadata({params, searchParams}: Props): Promise<Metadata> {
   const {lang, path = []} = await params;
-  if (!valid(lang, path)) return {title: 'Страница не найдена | Forma 3D', robots: {index: false}};
+  if (!valid(lang, path) || pageOutOfRange(path, (await searchParams).page)) return {title: 'Страница не найдена | Forma 3D', robots: {index: false}};
   return buildMetadata(lang as Lang, path, pageNumber(path, (await searchParams).page));
 }
 
 export default async function Page({params, searchParams}: Props) {
   const {lang, path = []} = await params;
-  if (!valid(lang, path)) notFound();
+  if (!valid(lang, path) || pageOutOfRange(path, (await searchParams).page)) notFound();
   const l = lang as Lang;
   const catalogPage = pageNumber(path, (await searchParams).page);
   const contacts = readContacts();

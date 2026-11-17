@@ -4,7 +4,7 @@ import {products, productBrand, fromPrice, matchesMaterial, type Product} from '
 import productSeoData from './data/product-seo.json';
 import {ARTICLES, findArticle} from './articles';
 import {MATERIAL_SLUGS, MATERIAL_FILTER, MATERIAL_FAQ, type MaterialSlug} from './material-pages';
-import {PART_SLUGS, PART_FAQ, partSlugOf, type PartSlug} from './part-pages';
+import {PART_SLUGS, PART_FAQ, PART_FILTER, partSlugOf, type PartSlug} from './part-pages';
 import {DEFAULT_CONTACTS, HOURS, PICKUP_POINTS, phoneDigits, type Contacts} from './contacts';
 
 // Public address of the site. Can be overridden with the SITE_URL env var.
@@ -29,6 +29,21 @@ export function isValidPath(path: string[]) {
   if (page === 'catalog') return !sub || ((sub === 'parts' || (MATERIAL_SLUGS as string[]).includes(sub) || (PART_SLUGS as string[]).includes(sub)) && !extra);
   if (page === 'knowledge') return !sub || (!!findArticle(sub) && !extra);
   return path.length <= 1;
+}
+
+/** Products per catalog page — must match the page size in store.tsx. */
+const CATALOG_PAGE_SIZE = 18;
+
+/** Number of pages of a catalog listing with default filters (same filter as the store's initial state). */
+export function catalogPageCount(path: string[]): number {
+  const sub = path[1];
+  const isParts = sub === 'parts' || (!!sub && sub in PART_FILTER);
+  const partCategory = sub && sub in PART_FILTER ? PART_FILTER[sub as PartSlug] : undefined;
+  const material = sub && sub in MATERIAL_FILTER ? MATERIAL_FILTER[sub as MaterialSlug] : 'Все';
+  const count = products.filter(
+    (p) => p.type === (isParts ? 'parts' : 'filament') && (!partCategory || p.category === partCategory) && matchesMaterial(p, material),
+  ).length;
+  return Math.max(1, Math.ceil(count / CATALOG_PAGE_SIZE));
 }
 
 const TITLE_MAX = 60;
