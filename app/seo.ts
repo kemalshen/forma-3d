@@ -251,8 +251,8 @@ const PAGE_TEXT: Record<string, Record<Lang, PageText>> = {
   },
   catalog: {
     ru: {
-      title: 'Филамент Bambu Lab купить в Ташкенте — PLA, PETG | Forma 3D',
-      description: 'Филамент Bambu Lab 1,75 мм в Ташкенте: PLA, PETG, ABS, ASA, TPU и инженерные пластики. Доставка в день заказа или на следующий. Выберите материал и цвет.',
+      title: 'Пластик для 3D-принтера Bambu Lab в Ташкенте | Forma 3D',
+      description: 'Пластик для 3D-принтера — филамент Bambu Lab 1,75 мм в Ташкенте: PLA, PETG, ABS, ASA, TPU и инженерные пластики. Доставка в день заказа или на следующий.',
       h1: 'Филамент Bambu Lab для 3D-принтера',
     },
     uz: {

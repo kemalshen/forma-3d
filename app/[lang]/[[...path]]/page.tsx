@@ -46,7 +46,7 @@ export default async function Page({params, searchParams}: Props) {
       {blocks.map((b, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{__html: ld(b)}} />
       ))}
-      <Store initialPath={`/${lang}/${path.join('/')}`} initialCatalogPage={catalogPage} contacts={contacts} />
+      <Store initialPath={path.length?`/${lang}/${path.join('/')}`:`/${lang}`} initialCatalogPage={catalogPage} contacts={contacts} />
     </>
   );
 }
