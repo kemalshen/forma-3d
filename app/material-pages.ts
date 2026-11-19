@@ -65,7 +65,7 @@ export const MATERIAL_INTRO: Record<MaterialSlug, {ru: Intro; uz: Intro}> = {
   },
   tpu: {
     ru: {
-      text: 'TPU — гибкий пластик для накладок, амортизаторов, ремешков, чехлов и других эластичных деталей. У Bambu Lab это TPU 95A HF, 1,75 мм, на катушке 1 кг. Для серии A1 производитель относит TPU к подходящим материалам. TPU не совместим с AMS — его печатают с внешней катушки. За TPU лучше браться, когда уже есть опыт печати PLA.',
+      text: 'TPU (ТПУ, его ещё называют флекс-пластиком) — гибкий пластик для накладок, амортизаторов, ремешков, чехлов и других эластичных деталей. У Bambu Lab это TPU 95A HF, 1,75 мм, на катушке 1 кг. Для серии A1 производитель относит TPU к подходящим материалам. TPU не совместим с AMS — его печатают с внешней катушки. За TPU лучше браться, когда уже есть опыт печати PLA.',
       links: [
         {to: 'knowledge/kakoy-filament-vybrat', text: 'какой филамент выбрать'},
         {to: 'knowledge/kak-hranit-filament', text: 'как хранить и сушить филамент'},
@@ -124,7 +124,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
         ['Где купить PLA пластик для 3D-принтера в Ташкенте?', BUY_RU('PLA')],
         ['PLA Basic или PLA Matte — что выбрать?', 'PLA Matte даёт матовую поверхность, на которой слои заметны меньше, — для фигурок, макетов и подарков: [PLA Matte белый](product/pla-matte-white). PLA Basic прочнее: по данным Bambu Lab, прочность на изгиб у него 76 МПа против 53 МПа у PLA Matte — для держателей и кронштейнов берите [PLA Basic](product/pla-basic-black).'],
         ['Какая температура печати у PLA?', 'Для PLA Basic Bambu Lab указывает температуру сопла 190–230 °C. Подбирать её вручную не нужно: выберите в Bambu Studio профиль производителя, и слайсер подставит параметры сам. PLA печатается на любом принтере Bambu Lab, в том числе на A1 и A1 mini без корпуса.'],
-        ['Выдерживает ли PLA нагрев и улицу?', 'Хуже, чем PETG: по техническому листу Bambu Lab, температура тепловой деформации PLA Basic — 54–57 °C. Для деталей в машину, на солнце или рядом с батареей лучше PETG или ASA — подробнее в статье «[PETG или PLA](knowledge/petg-ili-pla)».'],
+        ['Выдерживает ли PLA нагрев и улицу?', 'Хуже, чем PETG: по техническому листу Bambu Lab, температура тепловой деформации PLA Basic — 54–57 °C. Для деталей в машину, на солнце или рядом с батареей лучше [PETG](catalog/petg) или [ASA](catalog/abs-asa) — подробнее в статье «[PETG или PLA](knowledge/petg-ili-pla)».'],
       ],
     },
     uz: {
@@ -133,7 +133,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
         ['Toshkentda 3D-printer uchun PLA plastikni qayerdan sotib olish mumkin?', BUY_UZ('PLA')],
         ['PLA Basic yoki PLA Matte — qaysi birini tanlash kerak?', 'PLA Matte xira sirt beradi, unda qatlamlar kamroq ko‘rinadi — figuralar, maketlar va sovg‘alar uchun: [oq PLA Matte](product/pla-matte-white). PLA Basic mustahkamroq: Bambu Lab ma’lumotlariga ko‘ra, uning egilishdagi mustahkamligi 76 MPa, PLA Matte da esa 53 MPa — ushlagichlar va kronshteynlar uchun [PLA Basic](product/pla-basic-black)ni oling.'],
         ['PLA qanday haroratda bosiladi?', 'PLA Basic uchun Bambu Lab soplo haroratini 190–230 °C deb ko‘rsatadi. Uni qo‘lda tanlash shart emas: Bambu Studio’da ishlab chiqaruvchi profilini tanlang, slayser parametrlarni o‘zi qo‘yadi. PLA har qanday Bambu Lab printerida, jumladan korpussiz A1 va A1 mini’da ham bosiladi.'],
-        ['PLA issiqlik va ko‘chaga chidaydimi?', 'PETG dan yomonroq: Bambu Lab texnik varag‘iga ko‘ra, PLA Basic ning issiqlikdan deformatsiyalanish harorati 54–57 °C. Mashina, quyosh yoki batareya yonidagi detallar uchun PETG yoki ASA yaxshiroq — batafsil «[PETG yoki PLA](knowledge/petg-ili-pla)» maqolasida.'],
+        ['PLA issiqlik va ko‘chaga chidaydimi?', 'PETG dan yomonroq: Bambu Lab texnik varag‘iga ko‘ra, PLA Basic ning issiqlikdan deformatsiyalanish harorati 54–57 °C. Mashina, quyosh yoki batareya yonidagi detallar uchun [PETG](catalog/petg) yoki [ASA](catalog/abs-asa) yaxshiroq — batafsil «[PETG yoki PLA](knowledge/petg-ili-pla)» maqolasida.'],
       ],
     },
   },
@@ -144,7 +144,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
         ['Где купить PETG пластик в Ташкенте?', BUY_RU('PETG')],
         ['Чем PETG отличается от PLA?', 'По данным Bambu Lab, на изгиб базовые версии почти равны: 75 МПа у PETG Basic и 76 МПа у PLA Basic. Зато ударная вязкость у PETG выше — 34,2 против 20,6 кДж/м², и он лучше держит нагрев. PLA проще в печати. Подробное сравнение — в статье «[PETG или PLA](knowledge/petg-ili-pla)».'],
         ['Какая температура печати у PETG?', 'Для PETG HF Bambu Lab указывает температуру сопла 230–260 °C и стол 65–75 °C с клеем. В Bambu Studio выберите профиль именно своей версии — [PETG Basic](product/petg-basic-black-spool) или [PETG HF](product/petg-hf-white), и параметры подставятся сами.'],
-        ['Нужно ли сушить PETG?', 'Да. PETG впитывает влагу: для PETG HF Bambu Lab рекомендует сушку перед использованием — 65 °C, 8 часов в сушилке — и хранение при влажности ниже 20%, в пакете с силикагелем. Если пластик тянет нити, а поверхность стала шероховатой, его пора просушить. Подробнее — «[Как хранить и сушить филамент](knowledge/kak-hranit-filament)», для сушки подойдёт [сушилка для филамента](product/filament-dryer).'],
+        ['Нужно ли сушить PETG?', 'Да. PETG впитывает влагу: для PETG HF Bambu Lab рекомендует сушку перед использованием — 65 °C, 8 часов в сушилке — и хранение при влажности ниже 20%, в пакете с [силикагелем](product/desiccant). Если пластик тянет нити, а поверхность стала шероховатой, его пора просушить. Подробнее — «[Как хранить и сушить филамент](knowledge/kak-hranit-filament)», для сушки подойдёт [сушилка для филамента](product/filament-dryer).'],
       ],
     },
     uz: {
@@ -153,7 +153,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
         ['Toshkentda PETG plastikni qayerdan sotib olish mumkin?', BUY_UZ('PETG')],
         ['PETG ning PLA dan farqi nimada?', 'Bambu Lab ma’lumotlariga ko‘ra, egilishda bazaviy versiyalar deyarli teng: PETG Basic da 75 MPa, PLA Basic da 76 MPa. Ammo PETG ning zarbaga chidamliligi yuqoriroq — 34,2 ga qarshi 20,6 kJ/m², va u issiqlikka yaxshiroq chidaydi. PLA esa osonroq bosiladi. Batafsil taqqoslash — «[PETG yoki PLA](knowledge/petg-ili-pla)» maqolasida.'],
         ['PETG qanday haroratda bosiladi?', 'PETG HF uchun Bambu Lab soplo haroratini 230–260 °C, stolni esa yelim bilan 65–75 °C deb ko‘rsatadi. Bambu Studio’da aynan o‘z versiyangiz profilini tanlang — [PETG Basic](product/petg-basic-black-spool) yoki [PETG HF](product/petg-hf-white), parametrlar o‘zi qo‘yiladi.'],
-        ['PETG ni quritish kerakmi?', 'Ha. PETG namlikni yutadi: PETG HF uchun Bambu Lab ishlatishdan oldin quritishni — quritgichda 65 °C, 8 soat — va 20% dan past namlikda, silikagelli paketda saqlashni tavsiya qiladi. Agar plastik ip tortsa va sirt g‘adir-budur bo‘lib qolsa, uni quritish vaqti keldi. Batafsil — «[Filamentni saqlash va quritish](knowledge/kak-hranit-filament)», quritish uchun [filament quritgichi](product/filament-dryer) mos keladi.'],
+        ['PETG ni quritish kerakmi?', 'Ha. PETG namlikni yutadi: PETG HF uchun Bambu Lab ishlatishdan oldin quritishni — quritgichda 65 °C, 8 soat — va 20% dan past namlikda, [silikagelli](product/desiccant) paketda saqlashni tavsiya qiladi. Agar plastik ip tortsa va sirt g‘adir-budur bo‘lib qolsa, uni quritish vaqti keldi. Batafsil — «[Filamentni saqlash va quritish](knowledge/kak-hranit-filament)», quritish uchun [filament quritgichi](product/filament-dryer) mos keladi.'],
       ],
     },
   },
@@ -182,7 +182,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
         ['Где купить TPU пластик в Ташкенте?', BUY_RU('гибкий TPU')],
         ['Можно ли печатать TPU на Bambu Lab A1?', 'Да: для серии A1 Bambu Lab относит TPU к подходящим материалам. У Bambu Lab это [TPU 95A HF](product/tpu-95a-hf-black-spool), 1,75 мм, на катушке 1 кг.'],
         ['Работает ли TPU с AMS?', 'Нет. По данным производителя, TPU 95A HF не совместим ни с одной системой AMS: его печатают с внешнего держателя катушки и одним цветом. Поэтому за TPU лучше браться, когда уже есть опыт печати PLA.'],
-        ['Нужно ли сушить TPU?', 'Да, Bambu Lab рекомендует сушить TPU 95A HF перед использованием; режим указан на этикетке и в техническом листе. Хранить открытую катушку лучше в герметичном пакете с силикагелем — подробнее в статье «[Как хранить и сушить филамент](knowledge/kak-hranit-filament)».'],
+        ['Нужно ли сушить TPU?', 'Да, Bambu Lab рекомендует сушить TPU 95A HF перед использованием; режим указан на этикетке и в техническом листе. Хранить открытую катушку лучше в герметичном пакете с [силикагелем](product/desiccant) — подробнее в статье «[Как хранить и сушить филамент](knowledge/kak-hranit-filament)».'],
       ],
     },
     uz: {
@@ -191,7 +191,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
         ['Toshkentda TPU plastikni qayerdan sotib olish mumkin?', BUY_UZ('egiluvchan TPU')],
         ['TPU ni Bambu Lab A1’da bosish mumkinmi?', 'Ha: A1 seriyasi uchun Bambu Lab TPU ni mos materiallar qatoriga kiritadi. Bambu Lab’da bu [TPU 95A HF](product/tpu-95a-hf-black-spool), 1,75 mm, g‘altakda 1 kg.'],
         ['TPU AMS bilan ishlaydimi?', 'Yo‘q. Ishlab chiqaruvchi ma’lumotlariga ko‘ra, TPU 95A HF hech qaysi AMS tizimi bilan mos emas: u tashqi g‘altak ushlagichidan va bitta rangda bosiladi. Shuning uchun TPU ga PLA bilan tajriba orttirgandan keyin o‘tgan ma’qul.'],
-        ['TPU ni quritish kerakmi?', 'Ha, Bambu Lab TPU 95A HF ni ishlatishdan oldin quritishni tavsiya qiladi; rejim yorliqda va texnik varaqda ko‘rsatilgan. Ochilgan g‘altakni silikagelli germetik paketda saqlagan ma’qul — batafsil «[Filamentni saqlash va quritish](knowledge/kak-hranit-filament)» maqolasida.'],
+        ['TPU ni quritish kerakmi?', 'Ha, Bambu Lab TPU 95A HF ni ishlatishdan oldin quritishni tavsiya qiladi; rejim yorliqda va texnik varaqda ko‘rsatilgan. Ochilgan g‘altakni [silikagelli](product/desiccant) germetik paketda saqlagan ma’qul — batafsil «[Filamentni saqlash va quritish](knowledge/kak-hranit-filament)» maqolasida.'],
       ],
     },
   },
@@ -201,7 +201,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
       items: [
         ['Где купить инженерный пластик для 3D-принтера в Ташкенте?', BUY_RU('инженерный пластик')],
         ['Какой хотэнд нужен для пластика с углеволокном?', 'Закалённый. Bambu Lab предупреждает: композиты с углеволокном (PLA-CF, PETG-CF, PA-CF) абразивны и быстро изнашивают стальные сопла и шестерни экструдера. Подходящие хотэнды — в разделе «[Хотэнды и сопла](catalog/hotends)».'],
-        ['Можно ли печатать PC и PA-CF на Bambu Lab A1?', 'Производитель не рекомендует: для серии A1 (открытый корпус) Bambu Lab относит PC, PA и композиты с углеволокном или стекловолокном к нерекомендуемым материалам — у крупных деталей растёт риск коробления и слабого сцепления слоёв. Для A1 выбирайте [PLA](catalog/pla), [PETG](catalog/petg) или TPU.'],
+        ['Можно ли печатать PC и PA-CF на Bambu Lab A1?', 'Производитель не рекомендует: для серии A1 (открытый корпус) Bambu Lab относит PC, PA и композиты с углеволокном или стекловолокном к нерекомендуемым материалам — у крупных деталей растёт риск коробления и слабого сцепления слоёв. Для A1 выбирайте [PLA](catalog/pla), [PETG](catalog/petg) или [TPU](catalog/tpu).'],
         ['Как заказать инженерный пластик, которого нет в наличии?', 'Позиции с пометкой «Под заказ» привозим из официального магазина Bambu Lab за {lead}. Перед заказом подтвердим цену и срок — напишите в Telegram @kemalsen.'],
       ],
     },
@@ -210,7 +210,7 @@ export const MATERIAL_FAQ: Record<MaterialSlug, {ru: Faq; uz: Faq}> = {
       items: [
         ['Toshkentda 3D-printer uchun muhandislik plastikini qayerdan sotib olish mumkin?', BUY_UZ('muhandislik plastiki')],
         ['Uglerod tolali plastik uchun qanday hotend kerak?', 'Toblangan. Bambu Lab ogohlantiradi: uglerod tolali kompozitlar (PLA-CF, PETG-CF, PA-CF) abraziv va po‘lat soplo hamda ekstruder tishli g‘ildiraklarini tez yeyib yuboradi. Mos hotendlar — «[Hotend va soplolar](catalog/hotends)» bo‘limida.'],
-        ['PC va PA-CF ni Bambu Lab A1’da bosish mumkinmi?', 'Ishlab chiqaruvchi tavsiya etmaydi: A1 seriyasi (ochiq korpus) uchun Bambu Lab PC, PA hamda uglerod yoki shisha tolali kompozitlarni tavsiya etilmaydigan materiallar qatoriga kiritadi — katta detallarda qiyshayish va qatlamlarning zaif yopishishi xavfi oshadi. A1 uchun [PLA](catalog/pla), [PETG](catalog/petg) yoki TPU ni tanlang.'],
+        ['PC va PA-CF ni Bambu Lab A1’da bosish mumkinmi?', 'Ishlab chiqaruvchi tavsiya etmaydi: A1 seriyasi (ochiq korpus) uchun Bambu Lab PC, PA hamda uglerod yoki shisha tolali kompozitlarni tavsiya etilmaydigan materiallar qatoriga kiritadi — katta detallarda qiyshayish va qatlamlarning zaif yopishishi xavfi oshadi. A1 uchun [PLA](catalog/pla), [PETG](catalog/petg) yoki [TPU](catalog/tpu) ni tanlang.'],
         ['Mavjud bo‘lmagan muhandislik plastikini qanday buyurtma qilish mumkin?', '«Buyurtma asosida» belgisi bor mahsulotlarni Bambu Lab rasmiy do‘konidan {lead} ichida olib kelamiz. Buyurtmadan oldin narx va muddatni tasdiqlaymiz — Telegram @kemalsen’ga yozing.'],
       ],
     },
